@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+
+-->
+<seiten style="keywordreplace" errortext="?" listseparator=", " fieldchar="#" regexchar=";">
+	<input file="vorlage.tex" charset="UTF-8" />
+	<output file="DSA/DSA_LaTeX_Heldendokument/CharakterKonfiguration.tex" charset="UTF-8"/>
+</seiten>

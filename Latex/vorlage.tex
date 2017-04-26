@@ -1,0 +1,1041 @@
+%--------------------------------------------------------------------
+%	Ausrüstung
+%\newcounter{sets}
+%\setcounter{sets}{\length{#daten/set/ausweichen#}}
+%----------------------------
+%	Informationen
+\def \CharakterName{#daten/angaben/name#}
+\def \CharakterRasse{#daten/angaben/rasse#}
+\def \CharakterKultur{#daten/angaben/kultur#}
+\def \CharakterProfession{#daten/angaben/profession/textkurz#}
+\def \CharakterPortraitBild{Wappen_Leer.png}
+
+\def \CharakterGPBasis{#daten/angaben/gp/start#}
+\def \CharakterRasseModifikationen{}
+\def \CharakterKulturModifikationen{}
+\def \CharakterProfessionModifikationen{}
+
+\def \CharakterGeschlecht{#daten/angaben/geschlecht#}
+\def \CharakterAlter{#daten/angaben/alter#}
+\def \CharakterGroesse{#daten/angaben/groesse# Schritt}
+\def \CharakterGewicht{#daten/angaben/gewicht# Stein}
+\def \CharakterHaarfarbe{#daten/angaben/haarfarbe#}
+\def \CharakterAugenfarbe{#daten/angaben/augenfarbe#}
+
+\def \CharakterAussehenA{#daten/angaben/aussehen/a0#}
+\def \CharakterAussehenB{#daten/angaben/aussehen/a1#}
+\def \CharakterAussehenC{#daten/angaben/aussehen/a2#}
+\def \CharakterAussehenD{#daten/angaben/aussehen/a3#}
+
+\def \CharakterStand{#daten/angaben/stand#}
+\def \CharakterTitel{#daten/angaben/titel#}
+\def \CharakterSO{#daten/eigenschaften/sozialstatus/akt#}
+
+\def \CharakterHintergrundA{#daten/angaben/familie/f0#}
+\def \CharakterHintergrundB{#daten/angaben/familie/f1#}
+\def \CharakterHintergrundC{#daten/angaben/familie/f2#}
+\def \CharakterHintergrundD{#daten/angaben/familie/f3#}
+\def \CharakterHintergrundE{#daten/angaben/familie/f4#}
+\def \CharakterHintergrundF{#daten/angaben/familie/f5#}
+
+\def \Gw {#daten/angaben/geweiht#}
+
+% Charakternotizen
+\def \CharakterNotizGenerationsdatum{}
+\def \CharakterNotizLetzteAenderung{}
+\def \CharakterNotizAnzahlAbenteuer{}
+\def \CharakterNotizKompilierungsDatum{\today}
+
+%----------------------------
+% Vorteile
+\def \CharakterVorteileA{#daten/vorteile/vorteil[bereich='Sonst' and istvorteil='true']/name#} % 1. Zeile
+\def \CharakterVorteileB{} % 2. Zeile
+\def \CharakterVorteileC{} % 3. Zeile
+\def \CharakterVorteileD{} % 4. Zeile
+\def \CharakterVorteileE{} % 5. Zeile
+
+%----------------------------
+% Nachteile
+\def \CharakterNachteileA{#daten/vorteile/vorteil[bereich='Sonst' and istvorteil='false']/name#} % 1. Zeile
+\def \CharakterNachteileB{#daten/vorteile/vorteil[bereich='Sonst' and istvorteil='false']/name#} % 2. Zeile
+\def \CharakterNachteileC{#daten/vorteile/vorteil[bereich='Sonst' and istvorteil='false']/name#} % 3. Zeile
+\def \CharakterNachteileD{#daten/vorteile/vorteil[bereich='Sonst' and istvorteil='false']/name#} % 4. Zeile
+\def \CharakterNachteileE{#daten/vorteile/vorteil[bereich='Sonst' and istvorteil='false']/name#} % 5. Zeile
+
+%----------------------------
+%	Eigenschaften
+% Mut
+\def \EigMUmod{#daten/eigenschaften/mut/modi#}
+\def \EigMUstart{#daten/eigenschaften/mut/start#}
+\def \EigMUgesteigert{#daten/eigenschaften/mut/akt#}
+% Klugheit
+\def \EigKLmod{#daten/eigenschaften/klugheit/modi#}
+\def \EigKLstart{#daten/eigenschaften/klugheit/start#}
+\def \EigKLgesteigert{#daten/eigenschaften/klugheit/akt#}
+% Intuition
+\def \EigINmod{#daten/eigenschaften/intuition/modi#}
+\def \EigINstart{#daten/eigenschaften/intuition/start#}
+\def \EigINgesteigert{#daten/eigenschaften/intuition/akt#}
+% Charisma
+\def \EigCHmod{#daten/eigenschaften/charisma/modi#}
+\def \EigCHstart{#daten/eigenschaften/charisma/start#}
+\def \EigCHgesteigert{#daten/eigenschaften/charisma/akt#}
+% Fingerfertigkeit
+\def \EigFFmod{#daten/eigenschaften/fingerfertigkeit/modi#}
+\def \EigFFstart{#daten/eigenschaften/fingerfertigkeit/start#}
+\def \EigFFgesteigert{#daten/eigenschaften/fingerfertigkeit/akt#}
+% Gewandtheit
+\def \EigGEmod{#daten/eigenschaften/gewandtheit/modi#}
+\def \EigGEstart{#daten/eigenschaften/gewandtheit/start#}
+\def \EigGEgesteigert{#daten/eigenschaften/gewandtheit/akt#}
+% Konstitution
+\def \EigKOmod{#daten/eigenschaften/konstitution/modi#}
+\def \EigKOstart{#daten/eigenschaften/konstitution//start#}
+\def \EigKOgesteigert{#daten/eigenschaften/konstitution//akt#}
+% Körperkraft
+\def \EigKKmod{#daten/eigenschaften/koerperkraft/modi#}
+\def \EigKKstart{#daten/eigenschaften/koerperkraft//start#}
+\def \EigKKgesteigert{#daten/eigenschaften/koerperkraft//akt#}
+% Geschwindigkeit
+\def \EigGSmod{#daten/eigenschaften/geschwindigkeit/modi#}
+\def \EigGSstart{#daten/eigenschaften/geschwindigkeit/start#}
+\def \EigGSaktuell{#daten/eigenschaften/geschwindigkeit/akt#}
+
+%----------------------------
+%	Basiswerte
+% Lebenspunkte
+\def \BasisLEmod{#daten/eigenschaften/lebensenergie/modi#}
+\def \BasisLEzugekauft{#daten/eigenschaften/lebensenergie/gekauft#}
+% Ausdauer
+\def \BasisAUmod{#daten/eigenschaften/ausdauer/modi#}
+\def \BasisAUzugekauft{#daten/eigenschaften/ausdauer/gekauft#}
+% Astralenergie
+\def \BasisAEmod{#daten/eigenschaften/astralenergie/modi#}
+\def \BasisAEzugekauft{#daten/eigenschaften/astralenergie/gekauft#}
+% Karmaenergie
+\def \BasisKEmod{#daten/eigenschaften/karmaenergie/modi#}
+\def \BasisKEstart{#daten/eigenschaften/karmaenergie/start#}
+\def \BasisKEaktuell{#daten/eigenschaften/karmaenergie/akt#}
+\def \BasisKEzugekauft{#daten/eigenschaften/karmaenergie/gekauft#}
+\def \BasisKEmaxZugekauft{0}
+% Magieresistenz
+\def \BasisMRmod{#daten/eigenschaften/magieresistenz/modi#}
+\def \BasisMRzugekauft{0}
+% INI-Basiswert
+\def \BasisINImod{#daten/eigenschaften/initiative/modi#}
+% AT-Basiswert
+\def \BasisATmod{#daten/eigenschaften/attacke/modi#}
+% PA-Basiswert
+\def \BasisPAmod{#daten/eigenschaften/parade/modi#}
+% FK-Basiswert
+\def \BasisFKmod{#daten/eigenschaften/fernkampf-basis/modi#}
+
+%----------------------------
+%	Abenteuerpunkte
+\def \APgesamt{#daten/angaben/ap/gesamt#}
+\def \APeingesetzt{#daten/angaben/ap/genutzt#}
+\def \APguthaben{#daten/angaben/ap/frei#}
+
+%----------------------------
+%	Sonderfertigkeiten
+% Ausser Kampf
+\def \SFausserKampfA{#daten/sonderfertigkeiten/sonderfertigkeit[bereich='Sonst']/name#}
+\def \SFausserKampfB{#daten/sonderfertigkeiten/sonderfertigkeit[bereich='Talentspezialisierung']/name#}
+\def \SFausserKampfC{}
+\def \SFausserKampfD{}
+\def \SFausserKampfE{}
+\def \SFausserKampfF{}
+
+%----------------------------
+%	Gaben
+\def \GabeA{#daten/talente/talent[bereich='Gaben'][1]/name#} % 1. Gabe:
+\def \GabeATaWL{#daten/talente/talent[bereich='Gaben'][1]/wert#}
+\def \GabeATaWR{}
+\def \GabeB{#daten/talente/talent[bereich='Gaben'][2]/name#} % 2. Gabe:
+\def \GabeBTaWL{#daten/talente/talent[bereich='Gaben'][2]/wert#}
+\def \GabeBTaWR{}
+\def \GabeC{#daten/talente/talent[bereich='Gaben'][2]/name#} % 3. Gabe:
+\def \GabeCTaWL{#daten/talente/talent[bereich='Gaben'][2]/wert#}
+\def \GabeCTaWR{}
+
+%----------------------------
+%	Talente
+% Basis Kampftechniken
+\def \TalentDolcheAT{#daten/talente/talent[name='Dolche']/at#} % Dolche
+\def \TalentDolchePA{#daten/talente/talent[name='Dolche']/pa#}
+\def \TalentDolcheTaWL{#daten/talente/talent[name='Dolche']/wert#}
+\def \TalentDolcheTaWR{}
+\def \TalentHiebwaffenAT{#daten/talente/talent[name='Hiebwaffen']/at#} % Hiebwaffen
+\def \TalentHiebwaffenPA{#daten/talente/talent[name='Hiebwaffen']/pa#}
+\def \TalentHiebwaffenTaWL{#daten/talente/talent[name='Hiebwaffen']/wert#}
+\def \TalentHiebwaffenTaWR{}
+\def \TalentRaufenAT{#daten/talente/talent[name='Raufen']/at#} % Raufen
+\def \TalentRaufenPA{#daten/talente/talent[name='Raufen']/pa#}
+\def \TalentRaufenTaWL{#daten/talente/talent[name='Raufen']/wert#}
+\def \TalentRaufenTaWR{}
+\def \TalentRingenAT{#daten/talente/talent[name='Ringen']/at#} % Ringen
+\def \TalentRingenPA{#daten/talente/talent[name='Ringen']/pa#}
+\def \TalentRingenTaWL{#daten/talente/talent[name='Ringen']/wert#}
+\def \TalentRingenTaWR{}
+\def \TalentSaebelAT{#daten/talente/talent[name='Säbel']/at#} % Säbel
+\def \TalentSaebelPA{#daten/talente/talent[name='Säbel']/pa#}
+\def \TalentSaebelTaWL{#daten/talente/talent[name='Säbel']/wert#}
+\def \TalentSaebelTaWR{}
+\def \TalentWurfmesserAT{#daten/talente/talent[name='Wurfmesser']/at#} % Wurfmesser
+\def \TalentWurfmesserPA{}
+\def \TalentWurfmesserTaWL{#daten/talente/talent[name='Wurfmesser']/wert#}
+\def \TalentWurfmesserTaWR{}
+
+% Extra Kampftechniken
+\def \TalentKampfExtraA{#daten/talente/talent[bereich='Kampf'and basis='false'][1]/name#} % 1. extra Kampftechnik:
+\def \TalentKampfExtraASKat{#daten/talente/talent[bereich='Kampf'and basis='false'][1]/lernkomplexität#}
+\def \TalentKampfExtraABE{#daten/talente/talent[bereich='Kampf'and basis='false'][1]/behinderung#}
+\def \TalentKampfExtraAAT{#daten/talente/talent[bereich='Kampf'and basis='false'][1]/at#}
+\def \TalentKampfExtraAPA{#daten/talente/talent[bereich='Kampf'and basis='false'][1]/pa#}
+\def \TalentKampfExtraATaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][1]/wert#}
+\def \TalentKampfExtraATaWR{}
+
+\def \TalentKampfExtraB{#daten/talente/talent[bereich='Kampf'and basis='false'][2]/name#} % 2. extra Kampftechnik:
+\def \TalentKampfExtraBSKat{#daten/talente/talent[bereich='Kampf'and basis='false'][2]/lernkomplexität#}
+\def \TalentKampfExtraBBE{#daten/talente/talent[bereich='Kampf'and basis='false'][2]/behinderung#}
+\def \TalentKampfExtraBAT{#daten/talente/talent[bereich='Kampf'and basis='false'][2]/at#}
+\def \TalentKampfExtraBPA{#daten/talente/talent[bereich='Kampf'and basis='false'][2]/pa#}
+\def \TalentKampfExtraBTaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][2]/wert#}
+\def \TalentKampfExtraBTaWR{}
+
+\def \TalentKampfExtraC{#daten/talente/talent[bereich='Kampf'and basis='false'][3]/name#} % 3. extra Kampftechnik:
+\def \TalentKampfExtraCSKat{#daten/talente/talent[bereich='Kampf'and basis='false'][3]/lernkomplexität#}
+\def \TalentKampfExtraCBE{#daten/talente/talent[bereich='Kampf'and basis='false'][3]/behinderung#}
+\def \TalentKampfExtraCAT{#daten/talente/talent[bereich='Kampf'and basis='false'][3]/at#}
+\def \TalentKampfExtraCPA{#daten/talente/talent[bereich='Kampf'and basis='false'][3]/pa#}
+\def \TalentKampfExtraCTaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][3]/wert#}
+\def \TalentKampfExtraCTaWR{}
+
+\def \TalentKampfExtraD{#daten/talente/talent[bereich='Kampf'and basis='false'][4]/name#} % 4. extra Kampftechnik:
+\def \TalentKampfExtraDSKat{#daten/talente/talent[bereich='Kampf'and basis='false'][4]/lernkomplexität#}
+\def \TalentKampfExtraDBE{#daten/talente/talent[bereich='Kampf'and basis='false'][4]/behinderung#}
+\def \TalentKampfExtraDAT{#daten/talente/talent[bereich='Kampf'and basis='false'][4]/at#}
+\def \TalentKampfExtraDPA{#daten/talente/talent[bereich='Kampf'and basis='false'][4]/pa#}
+\def \TalentKampfExtraDTaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][4]/wert#}
+\def \TalentKampfExtraDTaWR{}
+
+\def \TalentKampfExtraE{#daten/talente/talent[bereich='Kampf'and basis='false'][5]/name#} % 5. extra Kampftechnik:
+\def \TalentKampfExtraESKat{#daten/talente/talent[bereich='Kampf'and basis='false'][5]/lernkomplexität#}
+\def \TalentKampfExtraEBE{#daten/talente/talent[bereich='Kampf'and basis='false'][5]/behinderung#}
+\def \TalentKampfExtraEAT{#daten/talente/talent[bereich='Kampf'and basis='false'][5]/at#}
+\def \TalentKampfExtraEPA{#daten/talente/talent[bereich='Kampf'and basis='false'][5]/pa#}
+\def \TalentKampfExtraETaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][5]/wert#}
+\def \TalentKampfExtraETaWR{}
+
+\def \TalentKampfExtraF{#daten/talente/talent[bereich='Kampf'and basis='false'][6]/name#} % 6. extra Kampftechnik:
+\def \TalentKampfExtraFSKat{#daten/talente/talent[bereich='Kampf'and basis='false'][6]/lernkomplexität#}
+\def \TalentKampfExtraFBE{#daten/talente/talent[bereich='Kampf'and basis='false'][6]/behinderung#}
+\def \TalentKampfExtraFAT{#daten/talente/talent[bereich='Kampf'and basis='false'][6]/at#}
+\def \TalentKampfExtraFPA{#daten/talente/talent[bereich='Kampf'and basis='false'][6]/pa#}
+\def \TalentKampfExtraFTaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][6]/wert#}
+\def \TalentKampfExtraFTaWR{}
+
+\def \TalentKampfExtraG{#daten/talente/talent[bereich='Kampf'and basis='false'][7]/name#} % 7. extra Kampftechnik:
+\def \TalentKampfExtraGSKat{#daten/talente/talent[bereich='Kampf'and basis='false'][7]/lernkomplexität#}
+\def \TalentKampfExtraGBE{#daten/talente/talent[bereich='Kampf'and basis='false'][7]/behinderung#}
+\def \TalentKampfExtraGAT{#daten/talente/talent[bereich='Kampf'and basis='false'][7]/at#}
+\def \TalentKampfExtraGPA{#daten/talente/talent[bereich='Kampf'and basis='false'][7]/pa#}
+\def \TalentKampfExtraGTaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][7]/wert#}
+\def \TalentKampfExtraGTaWR{}
+
+\def \TalentKampfExtraH{#daten/talente/talent[bereich='Kampf'and basis='false'][8]/name#} % 8. extra Kampftechnik:
+\def \TalentKampfExtraHSKat{#daten/talente/talent[bereich='Kampf'and basis='false'][8]/lernkomplexität#}
+\def \TalentKampfExtraHBE{#daten/talente/talent[bereich='Kampf'and basis='false'][8]/behinderung#}
+\def \TalentKampfExtraHAT{#daten/talente/talent[bereich='Kampf'and basis='false'][8]/at#}
+\def \TalentKampfExtraHPA{#daten/talente/talent[bereich='Kampf'and basis='false'][8]/pa#}
+\def \TalentKampfExtraHTaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][8]/wert#}
+\def \TalentKampfExtraHTaWR{}
+
+\def \TalentKampfExtraI{#daten/talente/talent[bereich='Kampf'and basis='false'][9]/name#} % 9. extra Kampftechnik:
+\def \TalentKampfExtraISKat{#daten/talente/talent[bereich='Kampf'and basis='false'][9]/lernkomplexität#}
+\def \TalentKampfExtraIBE{#daten/talente/talent[bereich='Kampf'and basis='false'][9]/behinderung#}
+\def \TalentKampfExtraIAT{#daten/talente/talent[bereich='Kampf'and basis='false'][9]/at#}
+\def \TalentKampfExtraIPA{#daten/talente/talent[bereich='Kampf'and basis='false'][9]/pa#}
+\def \TalentKampfExtraITaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][9]/wert#}
+\def \TalentKampfExtraITaWR{}
+
+\def \TalentKampfExtraJ{#daten/talente/talent[bereich='Kampf'and basis='false'][10]/name#} % 10. extra Kampftechnik:
+\def \TalentKampfExtraJSKat{#daten/talente/talent[bereich='Kampf'and basis='false'][10]/lernkomplexität#}
+\def \TalentKampfExtraJBE{#daten/talente/talent[bereich='Kampf'and basis='false'][10]/behinderung#}
+\def \TalentKampfExtraJAT{#daten/talente/talent[bereich='Kampf'and basis='false'][10]/at#}
+\def \TalentKampfExtraJPA{#daten/talente/talent[bereich='Kampf'and basis='false'][10]/pa#}
+\def \TalentKampfExtraJTaWL{#daten/talente/talent[bereich='Kampf'and basis='false'][10]/wert#}
+\def \TalentKampfExtraJTaWR{}
+
+% Basis Körperliche Talente
+\def \TalentAthletikTaWL{#daten/talente/talent[name='Athletik']/wert#} % Athletik
+\def \TalentAthletikTaWR{}
+\def \TalentKletternTaWL{#daten/talente/talent[name='Klettern']/wert#} % Klettern
+\def \TalentKletternTaWR{}
+\def \TalentKoerperbeherrschungTaWL{#daten/talente/talent[name='Körperbeherrschung']/wert#} % Körperbeherrschung
+\def \TalentKoerperbeherrschungTaWR{}
+\def \TalentSchleichenTaWL{#daten/talente/talent[name='Schleichen']/wert#} % Schleichen
+\def \TalentSchleichenTaWR{}
+\def \TalentSchwimmenTaWL{#daten/talente/talent[name='Schwimmen']/wert#} % Schwimmen
+\def \TalentSchwimmenTaWR{}
+\def \TalentSelbstbeherrschungTaWL{#daten/talente/talent[name='Selbstbeherrschung']/wert#} % Selbstbeherrschung
+\def \TalentSelbstbeherrschungTaWR{}
+\def \TalentSichVersteckenTaWL{#daten/talente/talent[name='Sich verstecken']/wert#} % Sich Verstecken
+\def \TalentSichVersteckenTaWR{}
+\def \TalentSingenTaWL{#daten/talente/talent[name='Singen']/wert#} % Singen
+\def \TalentSingenTaWR{}
+\def \TalentSinnesschaerfeTaWL{#daten/talente/talent[name='Sinnenschärfe']/wert#} % Sinnesschärfe
+\def \TalentSinnesschaerfeTaWR{}
+\def \TalentTanzenTaWL{#daten/talente/talent[name='Tanzen']/wert#} % Tanzen
+\def \TalentTanzenTaWR{}
+\def \TalentZechenTaWL{#daten/talente/talent[name='Zechen']/wert#} % Zechen
+\def \TalentZechenTaWR{}
+
+% Extra Körperliche Talente
+\def \TalentKoerperExtraA{#daten/talente/talent[bereich='Körperlich' and basis='false'][1]/name#} % 1. extra körperliches talent:
+\def \TalentKoerperExtraAProbe{#daten/talente/talent[bereich='Körperlich' and basis='false'][1]/probe#}
+\def \TalentKoerperExtraABE{#daten/talente/talent[bereich='Körperlich' and basis='false'][1]/behinderung#}
+\def \TalentKoerperExtraATaWL{#daten/talente/talent[bereich='Körperlich' and basis='false'][1]/wert#}
+\def \TalentKoerperExtraATaWR{}
+
+\def \TalentKoerperExtraB{#daten/talente/talent[bereich='Körperlich' and basis='false'][2]/name#} % 2. extra körperliches talent:
+\def \TalentKoerperExtraBProbe{#daten/talente/talent[bereich='Körperlich' and basis='false'][2]/probe#}
+\def \TalentKoerperExtraBBE{#daten/talente/talent[bereich='Körperlich' and basis='false'][2]/behinderung#}
+\def \TalentKoerperExtraBTaWL{#daten/talente/talent[bereich='Körperlich' and basis='false'][2]/wert#}
+\def \TalentKoerperExtraBTaWR{}
+
+\def \TalentKoerperExtraC{#daten/talente/talent[bereich='Körperlich' and basis='false'][3]/name#} % 3. extra körperliches talent:
+\def \TalentKoerperExtraCProbe{#daten/talente/talent[bereich='Körperlich' and basis='false'][3]/probe#}
+\def \TalentKoerperExtraCBE{#daten/talente/talent[bereich='Körperlich' and basis='false'][3]/behinderung#}
+\def \TalentKoerperExtraCTaWL{#daten/talente/talent[bereich='Körperlich' and basis='false'][3]/wert#}
+\def \TalentKoerperExtraCTaWR{}
+
+\def \TalentKoerperExtraD{#daten/talente/talent[bereich='Körperlich' and basis='false'][4]/name#} % 4. extra körperliches talent:
+\def \TalentKoerperExtraDProbe{#daten/talente/talent[bereich='Körperlich' and basis='false'][4]/probe#}
+\def \TalentKoerperExtraDBE{#daten/talente/talent[bereich='Körperlich' and basis='false'][4]/behinderung#}
+\def \TalentKoerperExtraDTaWL{#daten/talente/talent[bereich='Körperlich' and basis='false'][4]/wert#}
+\def \TalentKoerperExtraDTaWR{}
+
+\def \TalentKoerperExtraE{#daten/talente/talent[bereich='Körperlich' and basis='false'][5]/name#} % 5. extra körperliches talent:
+\def \TalentKoerperExtraEProbe{#daten/talente/talent[bereich='Körperlich' and basis='false'][5]/probe#}
+\def \TalentKoerperExtraEBE{#daten/talente/talent[bereich='Körperlich' and basis='false'][5]/behinderung#}
+\def \TalentKoerperExtraETaWL{#daten/talente/talent[bereich='Körperlich' and basis='false'][5]/wert#}
+\def \TalentKoerperExtraETaWR{}
+
+
+% Basis Gesellschaftliche Talente
+\def \TalentMenschenkenntnisTaWL{#daten/talente/talent[name='Menschenkenntnis']/wert#} % Menschenkenntnis
+\def \TalentMenschenkenntnisTaWR{}
+\def \TalentUeberredenTaWL{#daten/talente/talent[name='Überreden']/wert#} % Überreden
+\def \TalentUeberredenTaWR{}
+
+% Extra Gesellschaftliche Talente
+\def \TalentGesellschaftExtraA{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][1]/name#} % 1. extra gesellschaftliches Talent:
+\def \TalentGesellschaftExtraAProbe{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][1]/probe#}
+\def \TalentGesellschaftExtraATaWL{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][1]/wert#}
+\def \TalentGesellschaftExtraATaWR{}
+
+\def \TalentGesellschaftExtraB{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][2]/name#} % 2. extra gesellschaftliches Talent:
+\def \TalentGesellschaftExtraBProbe{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][2]/probe#}
+\def \TalentGesellschaftExtraBTaWL{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][2]/wert#}
+\def \TalentGesellschaftExtraBTaWR{}
+
+\def \TalentGesellschaftExtraC{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][3]/name#} % 3. extra gesellschaftliches Talent:
+\def \TalentGesellschaftExtraCProbe{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][3]/probe#}
+\def \TalentGesellschaftExtraCTaWL{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][3]/wert#}
+\def \TalentGesellschaftExtraCTaWR{}
+
+\def \TalentGesellschaftExtraD{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][4]/name#} % 4. extra gesellschaftliches Talent:
+\def \TalentGesellschaftExtraDProbe{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][4]/probe#}
+\def \TalentGesellschaftExtraDTaWL{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][4]/wert#}
+\def \TalentGesellschaftExtraDTaWR{}
+
+\def \TalentGesellschaftExtraE{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][5]/name#} % 5. extra gesellschaftliches Talent:
+\def \TalentGesellschaftExtraEProbe{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][5]/probe#}
+\def \TalentGesellschaftExtraETaWL{#daten/talente/talent[bereich='Gesellschaftlich' and basis='false'][5]/wert#}
+\def \TalentGesellschaftExtraETaWR{}
+
+
+% Basis Natur-Talente
+\def \TalentFaehrtensuchenTaWL{#daten/talente/talent[name='Fährtensuchen']/wert#} % Fährtensuchen
+\def \TalentFaehrtensuchenTaWR{}
+\def \TalentOrientierungTaWL{#daten/talente/talent[name='Orientierung']/wert#} % Orientierung
+\def \TalentOrientierungTaWR{}
+\def \TalentWildnislebenTaWL{#daten/talente/talent[name='Wildnisleben']/wert#} % Wildnisleben
+\def \TalentWildnislebenTaWR{}
+
+% Extra Natur-Talente
+\def \TalentNaturExtraA{#daten/talente/talent[bereich='Natur' and basis='false'][1]/name#} % 1. extra Natur-Talent:
+\def \TalentNaturExtraAProbe{#daten/talente/talent[bereich='Natur' and basis='false'][1]/probe#}
+\def \TalentNaturExtraATaWL{#daten/talente/talent[bereich='Natur' and basis='false'][1]/wert#}
+\def \TalentNaturExtraATaWR{}
+
+\def \TalentNaturExtraB{#daten/talente/talent[bereich='Natur' and basis='false'][2]/name#} % 2. extra Natur-Talent:
+\def \TalentNaturExtraBProbe{#daten/talente/talent[bereich='Natur' and basis='false'][2]/probe#}
+\def \TalentNaturExtraBTaWL{#daten/talente/talent[bereich='Natur' and basis='false'][2]/wert#}
+\def \TalentNaturExtraBTaWR{}
+
+\def \TalentNaturExtraC{#daten/talente/talent[bereich='Natur' and basis='false'][3]/name#} % 3. extra Natur-Talent:
+\def \TalentNaturExtraCProbe{#daten/talente/talent[bereich='Natur' and basis='false'][3]/probe#}
+\def \TalentNaturExtraCTaWL{#daten/talente/talent[bereich='Natur' and basis='false'][3]/wert#}
+\def \TalentNaturExtraCTaWR{}
+
+\def \TalentNaturExtraD{#daten/talente/talent[bereich='Natur' and basis='false'][4]/name#} % 4. extra Natur-Talent:
+\def \TalentNaturExtraDProbe{#daten/talente/talent[bereich='Natur' and basis='false'][4]/probe#}
+\def \TalentNaturExtraDTaWL{#daten/talente/talent[bereich='Natur' and basis='false'][4]/wert#}
+\def \TalentNaturExtraDTaWR{}
+
+\def \TalentNaturExtraE{#daten/talente/talent[bereich='Natur' and basis='false'][5]/name#} % 5. extra Natur-Talent:
+\def \TalentNaturExtraEProbe{#daten/talente/talent[bereich='Natur' and basis='false'][5]/probe#}
+\def \TalentNaturExtraETaWL{#daten/talente/talent[bereich='Natur' and basis='false'][5]/wert#}
+\def \TalentNaturExtraETaWR{}
+
+
+% Basis Wissenstalente
+\def \TalentGoetterKulteTaWL{#daten/talente/talent[name='Götter und Kulte']/wert#} % Götter/Kulte
+\def \TalentGoetterKulteTaWR{}
+\def \TalentRechnenTaWL{#daten/talente/talent[name='Rechnen']/wert#} % Rechnen
+\def \TalentRechnenTaWR{}
+\def \TalentSagenLegendenTaWL{#daten/talente/talent[name='Sagen und Legenden']/wert#} % Sagen/Legenden
+\def \TalentSagenLegendenTaWR{}
+
+% Extra Wissenstalente
+\def \TalentWissenExtraA{#daten/talente/talent[bereich='Wissen' and basis='false'][1]/name#} % 1. extra Wissen-Talent:
+\def \TalentWissenExtraAProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][1]/probe#}
+\def \TalentWissenExtraATaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][1]/wert#}
+\def \TalentWissenExtraATaWR{}
+
+\def \TalentWissenExtraB{#daten/talente/talent[bereich='Wissen' and basis='false'][2]/name#} % 2. extra Wissen-Talent:
+\def \TalentWissenExtraBProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][2]/probe#}
+\def \TalentWissenExtraBTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][2]/wert#}
+\def \TalentWissenExtraBTaWR{}
+
+\def \TalentWissenExtraC{#daten/talente/talent[bereich='Wissen' and basis='false'][3]/name#} % 3. extra Wissen-Talent:
+\def \TalentWissenExtraCProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][3]/probe#}
+\def \TalentWissenExtraCTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][3]/wert#}
+\def \TalentWissenExtraCTaWR{}
+
+\def \TalentWissenExtraD{#daten/talente/talent[bereich='Wissen' and basis='false'][4]/name#} % 4. extra Wissen-Talent:
+\def \TalentWissenExtraDProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][4]/probe#}
+\def \TalentWissenExtraDTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][4]/wert#}
+\def \TalentWissenExtraDTaWR{}
+
+\def \TalentWissenExtraE{#daten/talente/talent[bereich='Wissen' and basis='false'][5]/name#} % 5. extra Wissen-Talent:
+\def \TalentWissenExtraEProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][5]/probe#}
+\def \TalentWissenExtraETaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][5]/wert#}
+\def \TalentWissenExtraETaWR{}
+
+\def \TalentWissenExtraF{#daten/talente/talent[bereich='Wissen' and basis='false'][6]/name#} % 6. extra Wissen-Talent:
+\def \TalentWissenExtraFProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][6]/probe#}
+\def \TalentWissenExtraFTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][6]/wert#}
+\def \TalentWissenExtraFTaWR{}
+
+\def \TalentWissenExtraG{#daten/talente/talent[bereich='Wissen' and basis='false'][7]/name#} % 7. extra Wissen-Talent:
+\def \TalentWissenExtraGProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][7]/probe#}
+\def \TalentWissenExtraGTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][7]/wert#}
+\def \TalentWissenExtraGTaWR{}
+
+\def \TalentWissenExtraH{#daten/talente/talent[bereich='Wissen' and basis='false'][8]/name#} % 8. extra Wissen-Talent:
+\def \TalentWissenExtraHProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][8]/probe#}
+\def \TalentWissenExtraHTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][8]/wert#}
+\def \TalentWissenExtraHTaWR{}
+
+\def \TalentWissenExtraI{#daten/talente/talent[bereich='Wissen' and basis='false'][9]/name#} % 9. extra Wissen-Talent:
+\def \TalentWissenExtraIProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][9]/probe#}
+\def \TalentWissenExtraITaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][9]/wert#}
+\def \TalentWissenExtraITaWR{}
+
+\def \TalentWissenExtraJ{#daten/talente/talent[bereich='Wissen' and basis='false'][10]/name#} % 10. extra Wissen-Talent:
+\def \TalentWissenExtraJProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][10]/probe#}
+\def \TalentWissenExtraJTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][10]/wert#}
+\def \TalentWissenExtraJTaWR{}
+
+\def \TalentWissenExtraK{#daten/talente/talent[bereich='Wissen' and basis='false'][11]/name#} % 11. extra Wissen-Talent:
+\def \TalentWissenExtraKProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][11]/probe#}
+\def \TalentWissenExtraKTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][11]/wert#}
+\def \TalentWissenExtraKTaWR{}
+
+\def \TalentWissenExtraL{#daten/talente/talent[bereich='Wissen' and basis='false'][12]/name#} % 12. extra Wissen-Talent:
+\def \TalentWissenExtraLProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][12]/probe#}
+\def \TalentWissenExtraLTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][12]/wert#}
+\def \TalentWissenExtraLTaWR{}
+
+\def \TalentWissenExtraM{#daten/talente/talent[bereich='Wissen' and basis='false'][13]/name#} % 13. extra Wissen-Talent:
+\def \TalentWissenExtraMProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][13]/probe#}
+\def \TalentWissenExtraMTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][13]/wert#}
+\def \TalentWissenExtraMTaWR{}
+
+\def \TalentWissenExtraN{#daten/talente/talent[bereich='Wissen' and basis='false'][14]/name#} % 14. extra Wissen-Talent:
+\def \TalentWissenExtraNProbe{#daten/talente/talent[bereich='Wissen' and basis='false'][14]/probe#}
+\def \TalentWissenExtraNTaWL{#daten/talente/talent[bereich='Wissen' and basis='false'][14]/wert#}
+\def \TalentWissenExtraNTaWR{}
+
+% Sprachen & Schriften
+%\def \TalentMuttersprache{#daten/talente/talent[bereich='Sprachen']#} % Muttersprache:
+%\def \TalentMutterspracheKomp{} % Komplexität
+%\def \TalentMutterspracheTaWL{}
+%\def \TalentMutterspracheTaWR{}
+\def \TalentSpracheSchriftExtraA{#daten/talente/talent[bereich='Sprachen'][1]/name#} % 1. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraAKomp{#daten/talente/talent[bereich='Sprachen'][1]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraATaWL{#daten/talente/talent[bereich='Sprachen'][1]/wert#}
+\def \TalentSpracheSchriftExtraATaWR{}
+
+\def \TalentSpracheSchriftExtraB{#daten/talente/talent[bereich='Sprachen'][2]/name#} % 2. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraBKomp{#daten/talente/talent[bereich='Sprachen'][2]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraBTaWL{#daten/talente/talent[bereich='Sprachen'][2]/wert#}
+\def \TalentSpracheSchriftExtraBTaWR{}
+
+\def \TalentSpracheSchriftExtraC{#daten/talente/talent[bereich='Sprachen'][3]/name#} % 3. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraCKomp{#daten/talente/talent[bereich='Sprachen'][3]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraCTaWL{#daten/talente/talent[bereich='Sprachen'][3]/wert#}
+\def \TalentSpracheSchriftExtraCTaWR{}
+
+\def \TalentSpracheSchriftExtraD{#daten/talente/talent[bereich='Sprachen'][4]/name#} % 4. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraDKomp{#daten/talente/talent[bereich='Sprachen'][4]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraDTaWL{#daten/talente/talent[bereich='Sprachen'][4]/wert#}
+\def \TalentSpracheSchriftExtraDTaWR{}
+
+\def \TalentSpracheSchriftExtraE{#daten/talente/talent[bereich='Sprachen'][5]/name#} % 5. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraEKomp{#daten/talente/talent[bereich='Sprachen'][5]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraETaWL{#daten/talente/talent[bereich='Sprachen'][5]/wert#}
+\def \TalentSpracheSchriftExtraETaWR{}
+
+\def \TalentSpracheSchriftExtraF{#daten/talente/talent[bereich='Sprachen'][6]/name#} % 6. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraFKomp{#daten/talente/talent[bereich='Sprachen'][6]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraFTaWL{#daten/talente/talent[bereich='Sprachen'][6]/wert#}
+\def \TalentSpracheSchriftExtraFTaWR{}
+
+\def \TalentSpracheSchriftExtraG{#daten/talente/talent[bereich='Sprachen'][7]/name#} % 7. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraGKomp{#daten/talente/talent[bereich='Sprachen'][7]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraGTaWL{#daten/talente/talent[bereich='Sprachen'][7]/wert#}
+\def \TalentSpracheSchriftExtraGTaWR{}
+
+\def \TalentSpracheSchriftExtraH{#daten/talente/talent[bereich='Sprachen'][8]/name#} % 8. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraHKomp{#daten/talente/talent[bereich='Sprachen'][8]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraHTaWL{#daten/talente/talent[bereich='Sprachen'][8]/wert#}
+\def \TalentSpracheSchriftExtraHTaWR{}
+
+\def \TalentSpracheSchriftExtraI{#daten/talente/talent[bereich='Sprachen'][9]/name#} % 9. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraIKomp{#daten/talente/talent[bereich='Sprachen'][9]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraITaWL{#daten/talente/talent[bereich='Sprachen'][9]/wert#}
+\def \TalentSpracheSchriftExtraITaWR{}
+
+\def \TalentSpracheSchriftExtraJ{#daten/talente/talent[bereich='Sprachen'][10]/name#} % 10. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraJKomp{#daten/talente/talent[bereich='Sprachen'][10]/sprachkomplexität#}
+\def \TalentSpracheSchriftExtraJTaWL{#daten/talente/talent[bereich='Sprachen'][10]/wert#}
+\def \TalentSpracheSchriftExtraJTaWR{}
+
+
+% Basis  Handwerkliche Talente
+\def \TalentHeilkundeWundenTaWL{#daten/talente/talent[name='Heilkunde: Wunden']/wert#} % Heilkunde Wunden
+\def \TalentHeilkundeWundenTaWR{}
+\def \TalentHolzbearbeitungTaWL{#daten/talente/talent[name='Holzbearbeitung']/wert#} % Holzbearbeitung
+\def \TalentHolzbearbeitungTaWR{}
+\def \TalentKochenTaWL{#daten/talente/talent[name='Kochen']/wert#} % Kochen
+\def \TalentKochenTaWR{}
+\def \TalentLederarbeitenTaWL{#daten/talente/talent[name='Lederarbeiten']/wert#} % Lederarbeiten
+\def \TalentLederarbeitenTaWR{}
+\def \TalentMalenZeichnenTaWL{#daten/talente/talent[name='Malen/Zeichnen']/wert#} % Malen/Zeichnen
+\def \TalentMalenZeichnenTaWR{}
+\def \TalentSchneidernTaWL{#daten/talente/talent[name='Schneidern']/wert#} % Schneidern
+\def \TalentSchneidernTaWR{}
+
+% Extra Handwerkliche Talente
+\def \TalentHandwerkExtraA{#daten/talente/talent[bereich='Handwerk' and basis='false'][1]/name#} % 1. extra handwerkliches Talent:
+\def \TalentHandwerkExtraAProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][1]/probe#}
+\def \TalentHandwerkExtraATaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][1]/wert#}
+\def \TalentHandwerkExtraATaWR{}
+
+\def \TalentHandwerkExtraB{#daten/talente/talent[bereich='Handwerk' and basis='false'][2]/name#} % 2. extra handwerkliches Talent:
+\def \TalentHandwerkExtraBProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][2]/probe#}
+\def \TalentHandwerkExtraBTaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][2]/wert#}
+\def \TalentHandwerkExtraBTaWR{}
+
+\def \TalentHandwerkExtraC{#daten/talente/talent[bereich='Handwerk' and basis='false'][3]/name#} % 3. extra handwerkliches Talent:
+\def \TalentHandwerkExtraCProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][3]/probe#}
+\def \TalentHandwerkExtraCTaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][3]/wert#}
+\def \TalentHandwerkExtraCTaWR{}
+
+\def \TalentHandwerkExtraD{#daten/talente/talent[bereich='Handwerk' and basis='false'][4]/name#} % 4. extra handwerkliches Talent:
+\def \TalentHandwerkExtraDProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][4]/probe#}
+\def \TalentHandwerkExtraDTaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][4]/wert#}
+\def \TalentHandwerkExtraDTaWR{}
+
+\def \TalentHandwerkExtraE{#daten/talente/talent[bereich='Handwerk' and basis='false'][5]/name#} % 5. extra handwerkliches Talent:
+\def \TalentHandwerkExtraEProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][5]/probe#}
+\def \TalentHandwerkExtraETaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][5]/wert#}
+\def \TalentHandwerkExtraETaWR{}
+
+\def \TalentHandwerkExtraF{#daten/talente/talent[bereich='Handwerk' and basis='false'][6]/name#} % 6. extra handwerkliches Talent:
+\def \TalentHandwerkExtraFProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][6]/probe#}
+\def \TalentHandwerkExtraFTaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][6]/wert#}
+\def \TalentHandwerkExtraFTaWR{}
+
+\def \TalentHandwerkExtraG{#daten/talente/talent[bereich='Handwerk' and basis='false'][7]/name#} % 7. extra handwerkliches Talent:
+\def \TalentHandwerkExtraGProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][7]/probe#}
+\def \TalentHandwerkExtraGTaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][7]/wert#}
+\def \TalentHandwerkExtraGTaWR{}
+
+\def \TalentHandwerkExtraH{#daten/talente/talent[bereich='Handwerk' and basis='false'][8]/name#} % 8. extra handwerkliches Talent:
+\def \TalentHandwerkExtraHProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][8]/probe#}
+\def \TalentHandwerkExtraHTaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][8]/wert#}
+\def \TalentHandwerkExtraHTaWR{}
+
+\def \TalentHandwerkExtraI{#daten/talente/talent[bereich='Handwerk' and basis='false'][9]/name#} % 9. extra handwerkliches Talent:
+\def \TalentHandwerkExtraIProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][9]/probe#}
+\def \TalentHandwerkExtraITaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][9]/wert#}
+\def \TalentHandwerkExtraITaWR{}
+
+\def \TalentHandwerkExtraJ{#daten/talente/talent[bereich='Handwerk' and basis='false'][10]/name#} % 10. extra handwerkliches Talent:
+\def \TalentHandwerkExtraJProbe{#daten/talente/talent[bereich='Handwerk' and basis='false'][10]/probe#}
+\def \TalentHandwerkExtraJTaWL{#daten/talente/talent[bereich='Handwerk' and basis='false'][10]/wert#}
+\def \TalentHandwerkExtraJTaWR{}
+
+
+%----------------------------
+%	Waffen & Kampfwerte
+% Nahkampf
+\def \WaffeNahkampfA{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/name#} % 1. Nahkampfwaffe
+\def \WaffeNahkampfATypeBE{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/spalte2#} % Typ/eBE
+\def \WaffeNahkampfADK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/dk#} % DK
+\def \WaffeNahkampfATP{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/tp#} % TP
+\def \WaffeNahkampfATPKK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/tpkk#} % TP/KK
+\def \WaffeNahkampfAINI{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/ini#} % INI
+\def \WaffeNahkampfAWM{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/wm#} % WM
+\def \WaffeNahkampfAAT{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/at#} % AT
+\def \WaffeNahkampfAPA{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/pa#} % PA
+\def \WaffeNahkampfABFa{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/bfmin#} % Bruchfaktor: 1. Spalte
+\def \WaffeNahkampfABFb{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[1]/bfakt#} % Bruchfaktor: 2. Spalte
+\def \WaffeNahkampfABFc{} % Bruchfaktor: 3. Spalte
+\def \WaffeNahkampfABFd{} % Bruchfaktor: 4. Spalte
+\def \WaffeNahkampfABFe{} % Bruchfaktor: 5. Spalte
+
+\def \WaffeNahkampfB{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/name#} % 2. Nahkampfwaffe
+\def \WaffeNahkampfBTypeBE{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/spalte2#} % Typ/eBE
+\def \WaffeNahkampfBDK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/dk#} % DK
+\def \WaffeNahkampfBTP{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/tp#} % TP
+\def \WaffeNahkampfBTPKK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/tpkk#} % TP/KK
+\def \WaffeNahkampfBINI{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/ini#} % INI
+\def \WaffeNahkampfBWM{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/wm#} % WM
+\def \WaffeNahkampfBAT{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/at#} % AT
+\def \WaffeNahkampfBPA{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/pa#} % PA
+\def \WaffeNahkampfBBFa{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/bfmin#} % Bruchfaktor: 1. Spalte
+\def \WaffeNahkampfBBFb{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[2]/bfakt#} % Bruchfaktor: 2. Spalte
+\def \WaffeNahkampfBBFc{} % Bruchfaktor: 3. Spalte
+\def \WaffeNahkampfBBFd{} % Bruchfaktor: 4. Spalte
+\def \WaffeNahkampfBBFe{} % Bruchfaktor: 5. Spalte
+
+\def \WaffeNahkampfC{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/name#} % 3. Nahkampfwaffe
+\def \WaffeNahkampfCTypeBE{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/spalte2#} % Typ/eBE
+\def \WaffeNahkampfCDK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/dk#} % DK
+\def \WaffeNahkampfCTP{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/tp#} % TP
+\def \WaffeNahkampfCTPKK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/tpkk#} % TP/KK
+\def \WaffeNahkampfCINI{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/ini#} % INI
+\def \WaffeNahkampfCWM{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/wm#} % WM
+\def \WaffeNahkampfCAT{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/at#} % AT
+\def \WaffeNahkampfCPA{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/pa#} % PA
+\def \WaffeNahkampfCBFa{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/bfmin#} % Bruchfaktor: 1. Spalte
+\def \WaffeNahkampfCBFb{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[3]/bfakt#} % Bruchfaktor: 2. Spalte
+\def \WaffeNahkampfCBFc{} % Bruchfaktor: 3. Spalte
+\def \WaffeNahkampfCBFd{} % Bruchfaktor: 4. Spalte
+\def \WaffeNahkampfCBFe{} % Bruchfaktor: 5. Spalte
+
+\def \WaffeNahkampfD{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/name#} % 4. Nahkampfwaffe
+\def \WaffeNahkampfDTypeBE{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/spalte2#} % Typ/eBE
+\def \WaffeNahkampfDDK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/dk#} % DK
+\def \WaffeNahkampfDTP{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/tp#} % TP
+\def \WaffeNahkampfDTPKK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/tpkk#} % TP/KK
+\def \WaffeNahkampfDINI{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/ini#} % INI
+\def \WaffeNahkampfDWM{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/wm#} % WM
+\def \WaffeNahkampfDAT{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/at#} % AT
+\def \WaffeNahkampfDPA{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/pa#} % PA
+\def \WaffeNahkampfDBFa{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/bfmin#} % Bruchfaktor: 1. Spalte
+\def \WaffeNahkampfDBFb{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[4]/bfakt#} % Bruchfaktor: 2. Spalte
+\def \WaffeNahkampfDBFc{} % Bruchfaktor: 3. Spalte
+\def \WaffeNahkampfDBFd{} % Bruchfaktor: 4. Spalte
+\def \WaffeNahkampfDBFe{} % Bruchfaktor: 5. Spalte
+
+\def \WaffeNahkampfE{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/name#} % 5. Nahkampfwaffe
+\def \WaffeNahkampfETypeBE{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/spalte2#} % Typ/eBE
+\def \WaffeNahkampfEDK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/dk#} % DK
+\def \WaffeNahkampfETP{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/tp#} % TP
+\def \WaffeNahkampfETPKK{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/tpkk#} % TP/KK
+\def \WaffeNahkampfEINI{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/ini#} % INI
+\def \WaffeNahkampfEWM{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/wm#} % WM
+\def \WaffeNahkampfEAT{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/at#} % AT
+\def \WaffeNahkampfEPA{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/pa#} % PA
+\def \WaffeNahkampfEBFa{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/bfmin#} % Bruchfaktor: 1. Spalte
+\def \WaffeNahkampfEBFb{#daten/set[1]/nahkampfwaffen/nahkampfwaffe[5]/bfakt#} % Bruchfaktor: 2. Spalte
+\def \WaffeNahkampfEBFc{} % Bruchfaktor: 3. Spalte
+\def \WaffeNahkampfEBFd{} % Bruchfaktor: 4. Spalte
+\def \WaffeNahkampfEBFe{} % Bruchfaktor: 5. Spalte
+
+% Sonderfertigkeiten Nahkampf
+\def \SonderfertigkeitenNahkampfA{#daten/sonderfertigkeiten/sonderfertigkeit[bereich='Nahkampf'][1]/name#} % Nahkampf Sonderfertigkeiten (1. Zeile)
+\def \SonderfertigkeitenNahkampfB{} % Nahkampf Sonderfertigkeiten (2. Zeile)
+\def \SonderfertigkeitenNahkampfC{} % Nahkampf Sonderfertigkeiten (3. Zeile)
+
+% Fernkampf
+\def \WaffeFernkampfA{} % 1. Fernkampfwaffe
+\def \WaffeFernkampfATypeBE{} % Typ/eBE
+\def \WaffeFernkampfATP{} % TP
+\def \WaffeFernkampfAEntfernung{} % Entfernungen
+\def \WaffeFernkampfATPEntfernung{} % TP/Entfernungen
+\def \WaffeFernkampfAFK{} % FK
+\def \WaffeFernkampfAGeschosseA{} % Geschosse: 1. Spalte
+\def \WaffeFernkampfAGeschosseB{} % Geschosse: 2. Spalte
+\def \WaffeFernkampfAGeschosseC{} % Geschosse: 3. Spalte
+\def \WaffeFernkampfAGeschosseD{} % Geschosse: 4. Spalte
+\def \WaffeFernkampfAGeschosseE{} % Geschosse: 5. Spalte
+\def \WaffeFernkampfAGeschosseF{} % Geschosse: 6. Spalte
+\def \WaffeFernkampfAGeschosseG{} % Geschosse: 7. Spalte
+\def \WaffeFernkampfAGeschosseH{} % Geschosse: 8. Spalte
+\def \WaffeFernkampfAGeschosseI{} % Geschosse: 9. Spalte
+
+\def \WaffeFernkampfB{} % 2. Fernkampfwaffe
+\def \WaffeFernkampfBTypeBE{}
+\def \WaffeFernkampfBTP{}
+\def \WaffeFernkampfBEntfernung{}
+\def \WaffeFernkampfBTPEntfernung{}
+\def \WaffeFernkampfBFK{}
+\def \WaffeFernkampfBGeschosseA{}
+\def \WaffeFernkampfBGeschosseB{}
+\def \WaffeFernkampfBGeschosseC{}
+\def \WaffeFernkampfBGeschosseD{}
+\def \WaffeFernkampfBGeschosseE{}
+\def \WaffeFernkampfBGeschosseF{}
+\def \WaffeFernkampfBGeschosseG{}
+\def \WaffeFernkampfBGeschosseH{}
+\def \WaffeFernkampfBGeschosseI{}
+
+\def \WaffeFernkampfC{} % 3. Fernkampfwaffe
+\def \WaffeFernkampfCTypeBE{}
+\def \WaffeFernkampfCTP{}
+\def \WaffeFernkampfCEntfernung{}
+\def \WaffeFernkampfCTPEntfernung{}
+\def \WaffeFernkampfCFK{}
+\def \WaffeFernkampfCGeschosseA{}
+\def \WaffeFernkampfCGeschosseB{}
+\def \WaffeFernkampfCGeschosseC{}
+\def \WaffeFernkampfCGeschosseD{}
+\def \WaffeFernkampfCGeschosseE{}
+\def \WaffeFernkampfCGeschosseF{}
+\def \WaffeFernkampfCGeschosseG{}
+\def \WaffeFernkampfCGeschosseH{}
+\def \WaffeFernkampfCGeschosseI{}
+
+% Sonderfertigkeiten Fernkampf
+\def \SonderfertigkeitenFernkampfA{} % Fernkampf Sonderfertigkeiten (1. Zeile)
+\def \SonderfertigkeitenFernkampfB{} % Fernkampf Sonderfertigkeiten (2. Zeile)
+
+% Waffenloser Kampf
+\def \WaffenlosRaufenTPKK{} %Raufen
+\def \WaffenlosRaufenINI{}
+\def \WaffenlosRaufenAT{}
+\def \WaffenlosRaufenPA{}
+\def \WaffenlosRaufenTPA{}
+
+\def \WaffenlosRingenTPKK{} %Ringen
+\def \WaffenlosRingenINI{}
+\def \WaffenlosRingenAT{}
+\def \WaffenlosRaufenPA{}
+\def \WaffenlosRaufenTPA{}
+
+% Sonderfertigkeiten Waffenloser Kampf
+\def \SonderfertigkeitenWaffeloserKampfA{} % Sonderfertigkeiten/Manöver Waffenloser Kampf (1. Zeile)
+\def \SonderfertigkeitenWaffeloserKampfB{} % Sonderfertigkeiten/Manöver Waffenloser Kampf (2. Zeile)
+\def \SonderfertigkeitenWaffeloserKampfC{} % Sonderfertigkeiten/Manöver Waffenloser Kampf (3. Zeile)
+
+% Schild/Parierwaffen
+\def \WaffeSchildA{} % 1. Schild/Parierwaffe
+\def \WaffeSchildATyp{} % Typ
+\def \WaffeSchildAINI{} % INI
+\def \WaffeSchildAWM{}  % WM
+\def \WaffeSchildAPA{}  % PA
+\def \WaffeSchildABFa{} % Bruchfaktor: 1. Spalte
+\def \WaffeSchildABFb{} % Bruchfaktor: 2. Spalte
+\def \WaffeSchildABFc{} % Bruchfaktor: 3. Spalte
+\def \WaffeSchildABFd{} % Bruchfaktor: 4. Spalte
+\def \WaffeSchildABFe{} % Bruchfaktor: 5. Spalte
+
+\def \WaffeSchildB{} % 2. Schild/Parierwaffe
+\def \WaffeSchildBTyp{}
+\def \WaffeSchildBINI{}
+\def \WaffeSchildBWM{}
+\def \WaffeSchildBPA{}
+\def \WaffeSchildBBFa{}
+\def \WaffeSchildBBFb{}
+\def \WaffeSchildBBFc{}
+\def \WaffeSchildBBFd{}
+\def \WaffeSchildBBFe{}
+
+% Rüstung
+\def \RuestungA{}
+\def \RuestungARS{}
+\def \RuestungABE{}
+\def \RuestungB{}
+\def \RuestungBRS{}
+\def \RuestungBBE{}
+\def \RuestungC{}
+\def \RuestungCRS{}
+\def \RuestungCBE{}
+\def \RuestungD{}
+\def \RuestungDRS{}
+\def \RuestungDBE{}
+\def \RuestungE{}
+\def \RuestungERS{}
+\def \RuestungEBE{}
+
+\def \RuestungSummeRS{#daten/angaben/zonenruestung/gesamt#}
+\def \RuestungSummeBE{#daten/angaben/zonenruestung/behinderung#}
+\def \RuestungsgewoehnungWert{}
+
+%----------------------------
+%	Ausweichen
+\def \AusweichenSumme{}
+
+%----------------------------
+%	Ausrüstung
+% Kleidung
+\def \KleidungA{}
+\def \KleidungB{}
+\def \KleidungC{}
+\def \KleidungD{}
+\def \KleidungE{}
+\def \KleidungF{}
+
+% Ausrüstung
+\def \AusruestungLinksA{}
+\def \AusruestungLinksAGewicht{}
+\def \AusruestungLinksAWoGetragen{}
+\def \AusruestungRechtsA{}
+\def \AusruestungRechtsAGewicht{}
+\def \AusruestungRechtsAWoGetragen{}
+\def \AusruestungLinksB{}
+\def \AusruestungLinksBGewicht{}
+\def \AusruestungLinksBWoGetragen{}
+\def \AusruestungRechtsB{}
+\def \AusruestungRechtsBGewicht{}
+\def \AusruestungRechtsBWoGetragen{}
+\def \AusruestungLinksC{}
+\def \AusruestungLinksCGewicht{}
+\def \AusruestungLinksCWoGetragen{}
+\def \AusruestungRechtsC{}
+\def \AusruestungRechtsCGewicht{}
+\def \AusruestungRechtsCWoGetragen{}
+\def \AusruestungLinksD{}
+\def \AusruestungLinksDGewicht{}
+\def \AusruestungLinksDWoGetragen{}
+\def \AusruestungRechtsD{}
+\def \AusruestungRechtsDGewicht{}
+\def \AusruestungRechtsDWoGetragen{}
+\def \AusruestungLinksE{}
+\def \AusruestungLinksEGewicht{}
+\def \AusruestungLinksEWoGetragen{}
+\def \AusruestungRechtsE{}
+\def \AusruestungRechtsEGewicht{}
+\def \AusruestungRechtsEWoGetragen{}
+\def \AusruestungLinksF{}
+\def \AusruestungLinksFGewicht{}
+\def \AusruestungLinksFWoGetragen{}
+\def \AusruestungRechtsF{}
+\def \AusruestungRechtsFGewicht{}
+\def \AusruestungRechtsFWoGetragen{}
+\def \AusruestungLinksG{}
+\def \AusruestungLinksGGewicht{}
+\def \AusruestungLinksGWoGetragen{}
+\def \AusruestungRechtsG{}
+\def \AusruestungRechtsGGewicht{}
+\def \AusruestungRechtsGWoGetragen{}
+\def \AusruestungLinksH{}
+\def \AusruestungLinksHGewicht{}
+\def \AusruestungLinksHWoGetragen{}
+\def \AusruestungRechtsH{}
+\def \AusruestungRechtsHGewicht{}
+\def \AusruestungRechtsHWoGetragen{}
+\def \AusruestungLinksI{}
+\def \AusruestungLinksIGewicht{}
+\def \AusruestungLinksIWoGetragen{}
+\def \AusruestungRechtsI{}
+\def \AusruestungRechtsIGewicht{}
+\def \AusruestungRechtsIWoGetragen{}
+\def \AusruestungLinksJ{}
+\def \AusruestungLinksJGewicht{}
+\def \AusruestungLinksJWoGetragen{}
+\def \AusruestungRechtsJ{}
+\def \AusruestungRechtsJGewicht{}
+\def \AusruestungRechtsJWoGetragen{}
+\def \AusruestungLinksK{}
+\def \AusruestungLinksKGewicht{}
+\def \AusruestungLinksKWoGetragen{}
+\def \AusruestungRechtsK{}
+\def \AusruestungRechtsKGewicht{}
+\def \AusruestungRechtsKWoGetragen{}
+\def \AusruestungLinksL{}
+\def \AusruestungLinksLGewicht{}
+\def \AusruestungLinksLWoGetragen{}
+\def \AusruestungRechtsL{}
+\def \AusruestungRechtsLGewicht{}
+\def \AusruestungRechtsLWoGetragen{}
+\def \AusruestungLinksM{}
+\def \AusruestungLinksMGewicht{}
+\def \AusruestungLinksMWoGetragen{}
+\def \AusruestungRechtsM{}
+\def \AusruestungRechtsMGewicht{}
+\def \AusruestungRechtsMWoGetragen{}
+\def \AusruestungLinksN{}
+\def \AusruestungLinksNGewicht{}
+\def \AusruestungLinksNWoGetragen{}
+\def \AusruestungRechtsN{}
+\def \AusruestungRechtsNGewicht{}
+\def \AusruestungRechtsNWoGetragen{}
+\def \AusruestungLinksO{}
+\def \AusruestungLinksOGewicht{}
+\def \AusruestungLinksOWoGetragen{}
+\def \AusruestungRechtsO{}
+\def \AusruestungRechtsOGewicht{}
+\def \AusruestungRechtsOWoGetragen{}
+\def \AusruestungLinksP{}
+\def \AusruestungLinksPGewicht{}
+\def \AusruestungLinksPWoGetragen{}
+\def \AusruestungRechtsP{}
+\def \AusruestungRechtsPGewicht{}
+\def \AusruestungRechtsPWoGetragen{}
+\def \AusruestungLinksQ{}
+\def \AusruestungLinksQGewicht{}
+\def \AusruestungLinksQWoGetragen{}
+\def \AusruestungRechtsQ{}
+\def \AusruestungRechtsQGewicht{}
+\def \AusruestungRechtsQWoGetragen{}
+\def \AusruestungLinksR{}
+\def \AusruestungLinksRGewicht{}
+\def \AusruestungLinksRWoGetragen{}
+\def \AusruestungRechtsR{}
+\def \AusruestungRechtsRGewicht{}
+\def \AusruestungRechtsRWoGetragen{}
+
+% Proviant/Tränke
+\def \ProviantLinksA{}
+\def \ProviantLinksARationen{}
+\def \ProviantRechtsA{}
+\def \ProviantRechtsARationen{}
+\def \ProviantLinksB{}
+\def \ProviantLinksBRationen{}
+\def \ProviantRechtsB{}
+\def \ProviantRechtsBRationen{}
+\def \ProviantLinksC{}
+\def \ProviantLinksCRationen{}
+\def \ProviantRechtsC{}
+\def \ProviantRechtsCRationen{}
+\def \ProviantLinksD{}
+\def \ProviantLinksDRationen{}
+\def \ProviantRechtsD{}
+\def \ProviantRechtsDRationen{}
+
+% Vermögen
+\def \VermoegenDukaten{}
+\def \VermoegenSilbertaler{}
+\def \VermoegenHeller{}
+\def \VermoegenKreuzer{}
+\def \SonstigerBesitzA{}
+\def \SonstigerBesitzB{}
+\def \SonstigerBesitzC{}
+
+% Verbindungen
+\def \VerbindungenA{}
+\def \VerbindungenB{}
+\def \VerbindungenC{}
+\def \VerbindungenD{}
+\def \VerbindungenE{}
+\def \VerbindungenF{}
+\def \VerbindungenG{}
+\def \VerbindungenH{}
+
+% Notizen
+\def \NotizA{#daten/sonderfertigkeiten/sonderfertigkeit/bereich#}
+\def \NotizB{}
+\def \NotizC{}
+\def \NotizD{$\parallel$ Generiert: \CharakterNotizGenerationsdatum\ $\parallel$ Letzte Änderung: \CharakterNotizLetzteAenderung\ $\parallel$ Kompiliert: \CharakterNotizKompilierungsDatum\ $\parallel$ Erlebte Abenteuer: \CharakterNotizAnzahlAbenteuer\ $\parallel$}
+
+% Tiere
+\def \TierAName{}
+\def \TierAArt{}
+\def \TierAINI{}
+\def \TierAAT{}
+\def \TierAPA{}
+\def \TierATP{}
+\def \TierALE{}
+\def \TierARS{}
+\def \TierAKO{}
+\def \TierAGS{}
+\def \TierAAU{}
+\def \TierAMR{}
+\def \TierALO{}
+\def \TierATK{}
+\def \TierAZK{}
+
+\def \TierBName{}
+\def \TierBArt{}
+\def \TierBINI{}
+\def \TierBAT{}
+\def \TierBPA{}
+\def \TierBTP{}
+\def \TierBLE{}
+\def \TierBRS{}
+\def \TierBKO{}
+\def \TierBGS{}
+\def \TierBAU{}
+\def \TierBMR{}
+\def \TierBLO{}
+\def \TierBTK{}
+\def \TierBZK{}
+
+\def \TierCName{}
+\def \TierCArt{}
+\def \TierCINI{}
+\def \TierCAT{}
+\def \TierCPA{}
+\def \TierCTP{}
+\def \TierCLE{}
+\def \TierCRS{}
+\def \TierCKO{}
+\def \TierCGS{}
+\def \TierCAU{}
+\def \TierCMR{}
+\def \TierCLO{}
+\def \TierCTK{}
+\def \TierCZK{}
+
+% Zauber Eigenschaften
+\def \CharakterZauberRepraesentation{}
+\def \CharakterZauberMerkmale{}
+\def \CharakterZauberBegabungen{}
+\def \CharakterZauberUnfaehigkeiten{}
+
+% Zauber:
+% definition:
+%	\neuerZauber{Zaubername}
+%		{Eig.1}{Eig.2}{Eig.3}
+%		{ZfW}
+%		{ZD}
+%		{Kosten}
+%		{Reichweite}
+%		{WD}
+%		{Anmerkung}
+%		{Komplexität}
+%		{Repräsentation}
+%		{Hauszauber?}
+%		{Lern}
+% ein Beispiel:
+%\neuerZauber{Balsam Salabunde}
+%	{KL}{IN}{CH}
+%	{10}
+%	{5}
+%	{1 Asp/LP (min 5)}
+%	{selbst/Berührung}
+%	{augenblicklich}
+%	{}
+%	{C}
+%	{Elf}
+%	{X}
+%	{}
