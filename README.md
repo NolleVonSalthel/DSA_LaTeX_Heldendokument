@@ -1,3 +1,4 @@
+
 # DSA LaTeX Heldendokumente #
 
 Eine Sammlung von in LaTeX geschriebenen Heldendokumenten für das Pen & Paper Rollenspiel "Das Schwarze Auge" vom Ulisses Spiele Verlag.
@@ -16,6 +17,10 @@ Das Original kann auf der Homepage von Ulisses Spiele unter folgendem Link herun
 #### Konfiguration ####
 Die Konfiguration dieses Heldendokuments erfolgt über die CharakterKonfiguration.tex Datei mithilfe von einfachen LaTeX Defines.
 Wenn das Heldendokument ausgefüllt bzw. verändert werden soll, braucht man nur diese Datei editieren!
+
+#### Helden-Software ####
+Das Verzeichniss "Latex" dient zur integration in die [Helden-Software](http://www.helden-software.de/).
+Dazu benötigt man das [Heldenbogen Plugin](http://wiki.helden-software.de/wiki/Erweiterungen/Heldenbogen). Es sollte ausreichen, dass "Latex" Verzeichniss nach /pfad/zur/heldensoftware/plugins/heldenboegen/ zu kopieren und in der erstellung.xml den Pfad zur Datei CharakterKonfiguration.tex anzupassen.
 
 #### Disclaimer ####
 Ich stelle dieses Dokument nur für private Zwecke, laut den von Ulissess Spiele GmbH gewährten Rechten ("Darf zum Eigengebrauch photokopiert werden"), zur Verfügung.
