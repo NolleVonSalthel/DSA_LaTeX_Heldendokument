@@ -1,30 +1,33 @@
 %----------------------------
 %	The fancy stuff
 
+%I-T-E kram
+
+
 % Grundwerte
 \newcounter{cMUaktuell}
-\setcounter{cMUaktuell}{\EigMUmod + \EigMUstart + \EigMUgesteigert}
+\setcounter{cMUaktuell}{\EigMUgesteigert}
 \def \EigMUaktuell{\arabic{cMUaktuell}}
 \newcounter{cKLaktuell}
-\setcounter{cKLaktuell}{\EigKLmod + \EigKLstart + \EigKLgesteigert}
+\setcounter{cKLaktuell}{\EigKLgesteigert}
 \def \EigKLaktuell{\arabic{cKLaktuell}}
 \newcounter{cINaktuell}
-\setcounter{cINaktuell}{\EigINmod + \EigINstart + \EigINgesteigert}
+\setcounter{cINaktuell}{\EigINgesteigert}
 \def \EigINaktuell{\arabic{cINaktuell}}
 \newcounter{cCHaktuell}
-\setcounter{cCHaktuell}{\EigCHmod + \EigCHstart + \EigCHgesteigert}
+\setcounter{cCHaktuell}{\EigCHgesteigert}
 \def \EigCHaktuell{\arabic{cCHaktuell}}
 \newcounter{cFFaktuell}
-\setcounter{cFFaktuell}{\EigFFmod + \EigFFstart + \EigFFgesteigert}
+\setcounter{cFFaktuell}{\EigFFgesteigert}
 \def \EigFFaktuell{\arabic{cFFaktuell}}
 \newcounter{cGEaktuell}
-\setcounter{cGEaktuell}{\EigGEmod + \EigGEstart + \EigGEgesteigert}
+\setcounter{cGEaktuell}{\EigGEgesteigert}
 \def \EigGEaktuell{\arabic{cGEaktuell}}
 \newcounter{cKOaktuell}
-\setcounter{cKOaktuell}{\EigKOmod + \EigKOstart + \EigKOgesteigert}
+\setcounter{cKOaktuell}{\EigKOgesteigert}
 \def \EigKOaktuell{\arabic{cKOaktuell}}
 \newcounter{cKKaktuell}
-\setcounter{cKKaktuell}{\EigKKmod + \EigKKstart + \EigKKgesteigert}
+\setcounter{cKKaktuell}{\EigKKgesteigert}
 \def \EigKKaktuell{\arabic{cKKaktuell}}
 
 % Berechnung der abgeleiteten Grundwerte
@@ -73,6 +76,11 @@
 \newcounter{cAEaktuell}
 \setcounter{cAEaktuell}{\BasisAEmod + \BasisAEstart + \BasisAEzugekauft}
 \def \BasisAEaktuell{\arabic{cAEaktuell}}
+
+%\newcommand{\IstGeweiht}{\IfSubStr{\gw}{true}{1}{0}}
+%\newcounter{kemod}
+%\setcounter{kemod}{\BasisKEmod * \IstGeweiht}
+%\def \BasisKEmod{\arabic{kemod}}
 
 \newcounter{cMRstart} % Magieresistenz: (MU + KL + KO) / 5
 \setcounter{cMRstart}{(\EigMUaktuell + \EigKLaktuell + \EigKOaktuell + 3) / 5}
