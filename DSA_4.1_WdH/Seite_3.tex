@@ -2,26 +2,26 @@
 % Basiswertübersicht
 \renewcommand{\arraystretch}{1.5}
 \vspace*{3mm}
-\hspace*{-6.3mm}
+\hspace*{-7mm}
 {
-\begin{tabular}{!{\VRule[3pt]}p{42.5mm}p{42.5mm}p{42.5mm}p{42.5mm}!{\VRule[3pt]}}
+\begin{tabular}{!{\VRule[3pt]}p{42.75mm}p{42.75mm}p{42.75mm}p{42.75mm}!{\VRule[3pt]}}
 \specialrule{3pt}{0pt}{0pt}
 \textbf{Attacke-Basiswert }\BasisATaktuell & \textbf{Parade-Basiswert }\BasisPAaktuell  & \textbf{Fernkampf-Basiswert }\BasisFKaktuell  & \textbf{Initiative-Basiswert }\BasisINIaktuell\\
 \specialrule{3pt}{0pt}{0pt}
 \end{tabular}
 }
-\renewcommand{\arraystretch}{1.2}
-\vspace*{2mm}
+%\renewcommand{\arraystretch}{1.2}
+%\vspace*{2mm}
 %-----------------------------------------------------------------------------
 % Waffen & Kampfwerte
 \begin{center}
-{\Huge \textbf{Waffen \& Kampfwerte}}\\[2mm]
+{\huge \textbf{Waffen \& Kampfwerte}}\\[2mm]
 \end{center}
 { \small
 \begin{tabular}{
-		!{\VRule[3pt]}p{39mm} %Nahkampfwaffe
+		!{\VRule[3pt]}p{36mm} %Nahkampfwaffe
 		|C{16mm} %Typ/eBE
-		|C{5.8mm} %DK
+		|C{6.3mm} %DK
 		|C{9.5mm} %TP
 		|C{12.9mm} %TP/KK
 		|C{5.8mm} %INI
@@ -42,19 +42,19 @@
 \WaffeNahkampfC & \WaffeNahkampfCTypeBE & \WaffeNahkampfCDK & \WaffeNahkampfCTP & \WaffeNahkampfCTPKK & \WaffeNahkampfCINI & \WaffeNahkampfCWM & \WaffeNahkampfCAT & \WaffeNahkampfCPA & \WaffeNahkampfCTP & \WaffeNahkampfCBFa & \WaffeNahkampfCBFb & \WaffeNahkampfCBFc & \WaffeNahkampfCBFd \\\hline
 \WaffeNahkampfD & \WaffeNahkampfDTypeBE & \WaffeNahkampfDDK & \WaffeNahkampfDTP & \WaffeNahkampfDTPKK & \WaffeNahkampfDINI & \WaffeNahkampfDWM & \WaffeNahkampfDAT & \WaffeNahkampfDPA & \WaffeNahkampfDTP & \WaffeNahkampfDBFa & \WaffeNahkampfDBFb & \WaffeNahkampfDBFc & \WaffeNahkampfDBFd  \\\hline
 \WaffeNahkampfE & \WaffeNahkampfETypeBE & \WaffeNahkampfEDK & \WaffeNahkampfETP & \WaffeNahkampfETPKK & \WaffeNahkampfEINI & \WaffeNahkampfEWM & \WaffeNahkampfEAT & \WaffeNahkampfEPA & \WaffeNahkampfETP & \WaffeNahkampfEBFa & \WaffeNahkampfEBFb & \WaffeNahkampfEBFc & \WaffeNahkampfEBFd  \\\specialrule{1.5pt}{0pt}{0pt}
-\multicolumn{14}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\textbf{Sonderfertigkeiten:} \SonderfertigkeitenNahkampfA}\\\hline
-\multicolumn{14}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenNahkampfB}\\\hline
+\multicolumn{14}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\multirow{1}{155mm}{\textbf{Sonderfertigkeiten:} \SonderfertigkeitenNahkampfA}}\\
+\multicolumn{14}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenNahkampfB}\\
 \multicolumn{14}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenNahkampfC}\\
 \specialrule{3pt}{0pt}{0pt}
 \end{tabular}
-\\[3mm]
+\\[1mm]
 \begin{tabular}{
-		!{\VRule[3pt]}p{37mm} %Fernkampfwaffe
+		!{\VRule[3pt]}p{27mm} %Fernkampfwaffe
 		|p{15mm} %Typ/eBE
-		|p{7mm} %TP
-		|p{22mm} %Entfernungen
-		|p{26mm} %TP/Entfernung
-		|p{6mm} %FK
+		|p{9mm} %TP
+		|>{\centering\arraybackslash}p{36mm} %Entfernungen
+		|>{\centering\arraybackslash}p{26mm} %TP/Entfernung
+		|>{\centering\arraybackslash}p{5mm} %FK
 		|p{1mm} %Anzahl Geschosse
 		|p{1mm}
 		|p{1mm}
@@ -63,80 +63,34 @@
 		|p{1mm}
 		|p{1mm}
 		|p{1mm}
-		|p{1mm}
+		%|p{1mm}
 		!{\VRule[3pt]}
 	}
 \specialrule{3pt}{0pt}{0pt}
-\textbf{Fernkampfwaffe} & \textbf{Typ/eBE} & \textbf{TP} & \textbf{Entfernungen} & \textbf{TP/Entfernung} & \textbf{FK} & \multicolumn{9}{c!{\VRule[3pt]}}{\textbf{Anzahl Geschosse}}\\\specialrule{1.5pt}{0pt}{0pt}
-\WaffeFernkampfA & \WaffeFernkampfATypeBE & \WaffeFernkampfATP & \WaffeFernkampfAEntfernung & \WaffeFernkampfATPEntfernung & \WaffeFernkampfAFK & \WaffeFernkampfAGeschosseA & \WaffeFernkampfAGeschosseB & \WaffeFernkampfAGeschosseC & \WaffeFernkampfAGeschosseD & \WaffeFernkampfAGeschosseE & \WaffeFernkampfAGeschosseF & \WaffeFernkampfAGeschosseG & \WaffeFernkampfAGeschosseH & \WaffeFernkampfAGeschosseI \\\hline
-\WaffeFernkampfB & \WaffeFernkampfBTypeBE & \WaffeFernkampfBTP & \WaffeFernkampfBEntfernung & \WaffeFernkampfBTPEntfernung & \WaffeFernkampfBFK & \WaffeFernkampfBGeschosseA & \WaffeFernkampfBGeschosseB & \WaffeFernkampfBGeschosseC & \WaffeFernkampfBGeschosseD & \WaffeFernkampfBGeschosseE & \WaffeFernkampfBGeschosseF & \WaffeFernkampfBGeschosseG & \WaffeFernkampfBGeschosseH & \WaffeFernkampfBGeschosseI \\\hline
-\WaffeFernkampfC & \WaffeFernkampfCTypeBE & \WaffeFernkampfCTP & \WaffeFernkampfCEntfernung & \WaffeFernkampfCTPEntfernung & \WaffeFernkampfCFK & \WaffeFernkampfCGeschosseA & \WaffeFernkampfCGeschosseB & \WaffeFernkampfCGeschosseC & \WaffeFernkampfCGeschosseD & \WaffeFernkampfCGeschosseE & \WaffeFernkampfCGeschosseF & \WaffeFernkampfCGeschosseG & \WaffeFernkampfCGeschosseH & \WaffeFernkampfCGeschosseI \\\specialrule{1.5pt}{0pt}{0pt}
-\multicolumn{15}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\textbf{Sonderfertigkeiten:} \SonderfertigkeitenFernkampfA}\\\hline
-\multicolumn{15}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenFernkampfB}\\
+\textbf{Fernkampfwaffe} & \textbf{Typ/eBE} & \textbf{TP} & \textbf{Entfernungen} & \textbf{TP/Entfernung} & \textbf{FK} & \multicolumn{8}{c!{\VRule[3pt]}}{\textbf{Anzahl Geschosse}}\\\specialrule{1.5pt}{0pt}{0pt}
+\WaffeFernkampfA & \WaffeFernkampfATypeBE & \WaffeFernkampfATP & \WaffeFernkampfAEntfernung & \WaffeFernkampfATPEntfernung & \WaffeFernkampfAFK & \WaffeFernkampfAGeschosseA & \WaffeFernkampfAGeschosseB & \WaffeFernkampfAGeschosseC & \WaffeFernkampfAGeschosseD & \WaffeFernkampfAGeschosseE & \WaffeFernkampfAGeschosseF & \WaffeFernkampfAGeschosseG & \WaffeFernkampfAGeschosseH \\\hline%& \WaffeFernkampfAGeschosseI \\\hline
+\WaffeFernkampfB & \WaffeFernkampfBTypeBE & \WaffeFernkampfBTP & \WaffeFernkampfBEntfernung & \WaffeFernkampfBTPEntfernung & \WaffeFernkampfBFK & \WaffeFernkampfBGeschosseA & \WaffeFernkampfBGeschosseB & \WaffeFernkampfBGeschosseC & \WaffeFernkampfBGeschosseD & \WaffeFernkampfBGeschosseE & \WaffeFernkampfBGeschosseF & \WaffeFernkampfBGeschosseG & \WaffeFernkampfBGeschosseH \\\hline%& \WaffeFernkampfBGeschosseI \\\hline
+\WaffeFernkampfC & \WaffeFernkampfCTypeBE & \WaffeFernkampfCTP & \WaffeFernkampfCEntfernung & \WaffeFernkampfCTPEntfernung & \WaffeFernkampfCFK & \WaffeFernkampfCGeschosseA & \WaffeFernkampfCGeschosseB & \WaffeFernkampfCGeschosseC & \WaffeFernkampfCGeschosseD & \WaffeFernkampfCGeschosseE & \WaffeFernkampfCGeschosseF & \WaffeFernkampfCGeschosseG & \WaffeFernkampfCGeschosseH \\\hline%& \WaffeFernkampfCGeschosseI \\\specialrule{1.5pt}{0pt}{0pt}
+\multicolumn{14}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\textbf{Sonderfertigkeiten:} \SonderfertigkeitenFernkampfA}\\\hline
+%\multicolumn{15}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenFernkampfB}\\
 \specialrule{3pt}{0pt}{0pt}
-\end{tabular}
-\\[3mm]
+\end{tabular}\\
 \begin{tabular}{
-		!{\VRule[3pt]}p{40mm} %Waffenloser Kampf
+		!{\VRule[3pt]}p{35mm} %Waffenloser Kampf
 		|p{13mm} %TP/KK
-		|p{11mm} %INI
-		|p{11mm} %AT
-		|p{11mm} %PA
-		|p{14mm} %TP(A)
+		|p{5mm} %INI
+		|p{5mm} %AT
+		|p{5mm} %PA
+		|p{11mm} %TP(A)
 		!{\VRule[3pt]}
 	}
 \specialrule{3pt}{0pt}{0pt}
 \textbf{Waffenloser Kampf} & \textbf{TP/KK} & \textbf{INI} & \textbf{AT} & \textbf{PA} & \textbf{TP(A)}\\\specialrule{1.5pt}{0pt}{0pt}
 Raufen & \WaffenlosRaufenTPKK & \WaffenlosRaufenINI & \WaffenlosRaufenAT & \WaffenlosRaufenPA & \WaffenlosRaufenTPA \\\hline
 Ringen & \WaffenlosRingenTPKK & \WaffenlosRingenINI & \WaffenlosRingenAT & \WaffenlosRaufenPA & \WaffenlosRaufenTPA \\\specialrule{1.5pt}{0pt}{0pt}
-\multicolumn{6}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\textbf{Sonderfertigkeiten/Manöver:} \SonderfertigkeitenWaffeloserKampfA}\\\hline
-\multicolumn{6}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenWaffeloserKampfB}\\\hline
+\multicolumn{6}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\multirow{1}{90mm}{\textbf{Sonderfertigkeiten/Manöver:} \SonderfertigkeitenWaffeloserKampfA}}\\
+\multicolumn{6}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenWaffeloserKampfB}\\
 \multicolumn{6}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SonderfertigkeitenWaffeloserKampfC}\\
-\specialrule{3pt}{0pt}{0pt}
-\end{tabular}
-\\[2mm]
-%-----------------------------------------------------------------------------
-% Schild/Parierwaffe
-{\hspace*{4cm}\Large \textbf{Schild/Parierwaffe}}\\[2mm]
-\begin{tabular}{
-		!{\VRule[3pt]}p{35mm} %Name
-		|p{16mm} %Typ
-		|p{9mm} %INI
-		|p{9mm} %WM
-		|p{9mm} %PA
-		|p{1mm} %Bruchfaktor
-		|p{1mm} %Bruchfaktor
-		|p{1mm} %Bruchfaktor
-		|p{1mm} %Bruchfaktor
-		|p{1mm} %Bruchfaktor
-		!{\VRule[3pt]}
-	}
-\specialrule{3pt}{0pt}{0pt}
-\textbf{Name} & \textbf{Typ} & \textbf{INI} & \textbf{WM} & \textbf{PA} & \multicolumn{5}{c!{\VRule[3pt]}}{\textbf{Bruchfaktor}}\\\specialrule{1.5pt}{0pt}{0pt}
-\WaffeSchildA & \WaffeSchildATyp & \WaffeSchildAINI & \WaffeSchildAWM & \WaffeSchildAPA & \WaffeSchildABFa & \WaffeSchildABFb & \WaffeSchildABFc & \WaffeSchildABFd & \WaffeSchildABFe \\\hline
-\WaffeSchildB & \WaffeSchildBTyp & \WaffeSchildBINI & \WaffeSchildBWM & \WaffeSchildBPA & \WaffeSchildBBFa & \WaffeSchildBBFb & \WaffeSchildBBFc & \WaffeSchildBBFd & \WaffeSchildBBFe \\\specialrule{2pt}{0pt}{0pt}
-\multicolumn{10}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SFKreuzchen{Linkhand}Linkhand (PA+1), \SFKreuzchen{Schildkampf I}Schildkampf I (PA+2)/\SFKreuzchen{Schildkampf II}II (PA+2), \SFKreuzchen{Parierwaffen I}Parierwaffen I / \SFKreuzchen{Parierwaffen II}II}\\
-\specialrule{3pt}{0pt}{0pt}
-\end{tabular}
-\\[2mm]
-%-----------------------------------------------------------------------------
-% Rüstung & Ausweichen, Wunden
-{\hspace*{2cm}\Large \textbf{Rüstung}\hspace*{4cm}\textbf{Ausweichen}}\\[2mm]
-\begin{tabular}{
-		!{\VRule[3pt]}p{35mm} %Rüstungsstück
-		|p{5mm} %RS
-		|p{5mm} %BE
-		!{\VRule[3pt]}
-	}
-\specialrule{3pt}{0pt}{0pt}
-\textbf{Rüstungsstück}   & \textbf{RS}   & \textbf{BE}\\\hline
-\RuestungA & \RuestungARS & \RuestungABE \\\hline
-\RuestungB & \RuestungBRS & \RuestungBBE \\\hline
-\RuestungC & \RuestungCRS & \RuestungCBE \\\hline
-\RuestungD & \RuestungDRS & \RuestungDBE \\\hline
-\RuestungE & \RuestungERS & \RuestungEBE \\\hline
-\textbf{Summe} & \RuestungSummeRS & \RuestungSummeBE \\\hline
-\multicolumn{2}{!{\VRule[3pt]}l|}{\footnotesize Rüstungsgewöhnung \SFKreuzchen{Rüstungsgewöhnung I}I, \SFKreuzchen{Rüstungsgewöhnung II}II, \SFKreuzchen{Rüstungsgewöhnung III}III} & \RuestungsgewoehnungWert\\
 \specialrule{3pt}{0pt}{0pt}
 \end{tabular}
 \renewcommand{\arraystretch}{0.75}
@@ -147,22 +101,87 @@ Ringen & \WaffenlosRingenTPKK & \WaffenlosRingenINI & \WaffenlosRingenAT & \Waff
 		>{\centering\arraybackslash}p{12mm}@{} %
 		!{\VRule[3pt]}
 	}
-\specialrule{3pt}{0pt}{0pt}
-\tiny\textbf{PABasis} & \tiny\textbf{BE} & \tiny\textbf{Sonderfertigkeiten} &  \tiny\textbf{Summe}\\
-\multirow{4}{*}{\large\textbf{\BasisPAaktuell \ $-$}} & \multirow{4}{*}{\large\textbf{\RuestungSummeBE \ +}} & {\tiny\SFKreuzchen{Ausweichen~I}Ausweichen I (+3)} & \multirow{4}{*}{\large\textbf{$=$ \AusweichenSumme}}\\
-&& {\tiny\SFKreuzchen{Ausweichen~II}Ausweichen II (+3)} &\\
-&& {\tiny\SFKreuzchen{Ausweichen~III}Ausweichen III (+3)} &\\
-&& {\tiny Akrobatik? Flink/Behäbig?} &\\
-\specialrule{3pt}{0pt}{0pt}
 \multicolumn{4}{c}{}\\
-\multicolumn{4}{c}{\Large\textbf{Wunden}}\\[1mm]
+\multicolumn{4}{c}{\Large\textbf{Ausweichen}}\\[1mm]
+	\specialrule{3pt}{0pt}{0pt}
+	\tiny\textbf{PABasis} & \tiny\textbf{BE} & \tiny\textbf{Sonderfertigkeiten} &  \tiny\textbf{Summe}\\
+	\multirow{4}{*}{\large\textbf{\BasisPAaktuell \ $-$}} & \multirow{4}{*}{\large\textbf{\RuestungSummeBE \ +}} & {\tiny\SFKreuzchen{Ausweichen I}Ausweichen I (+3)} & \multirow{4}{*}{\large\textbf{$=$ \AusweichenSumme}}\\
+	&& {\tiny\SFKreuzchen{Ausweichen II}Ausweichen II (+3)} &\\
+	&& {\tiny\SFKreuzchen{Ausweichen III}Ausweichen III (+3)} &\\
+	&& {\tiny Akrobatik? Flink/Behäbig?} &\\
+	\specialrule{3pt}{0pt}{0pt}
+	\multicolumn{4}{c}{}\\
+	\multicolumn{4}{c}{\Large\textbf{Wunden}}\\[1mm]
+	\specialrule{3pt}{0pt}{0pt}
+	&&&\\
+	\multicolumn{4}{!{\VRule[3pt]}c!{\VRule[3pt]}}{\Large$\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$}\\
+	&&&\\
+	\multicolumn{4}{!{\VRule[3pt]}c!{\VRule[3pt]}}{\footnotesize\textbf{je Wunde AT,PA,FK,GE,INI-2; GS-1}}\\ % \footnotesize = Standardsize - 2pt
+	\specialrule{3pt}{0pt}{0pt}
+\end{tabular}
+\\
+%-----------------------------------------------------------------------------
+% Schild/Parierwaffe
+{\hspace*{2cm}\Large \textbf{Schild/Parierwaffe}}\\[2mm]
+\begin{tabular}{
+		!{\VRule[3pt]}p{35mm} %Name
+		|p{16mm} %Typ
+		|p{5mm} %INI
+		|p{6mm} %WM
+		|p{5mm} %PA
+		|p{1mm} %Bruchfaktor
+		|p{1mm} %Bruchfaktor
+		|p{1mm} %Bruchfaktor
+		|p{1mm} %Bruchfaktor
+		|p{1mm} %Bruchfaktor
+		!{\VRule[3pt]}
+	}
 \specialrule{3pt}{0pt}{0pt}
-&&&\\
-\multicolumn{4}{!{\VRule[3pt]}c!{\VRule[3pt]}}{\Large$\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$ $\bigcirc$}\\
-&&&\\
-\multicolumn{4}{!{\VRule[3pt]}c!{\VRule[3pt]}}{\footnotesize\textbf{je Wunde AT,PA,FK,GE,INI-2; GS-1}}\\ % \footnotesize = Standardsize - 2pt
+\textbf{Name} & \textbf{Typ} & \textbf{INI} & \textbf{WM} & \textbf{PA} & \multicolumn{5}{c!{\VRule[3pt]}}{\textbf{BF}}\\\specialrule{1.5pt}{0pt}{0pt}
+\WaffeSchildA & \WaffeSchildATyp & \WaffeSchildAINI & \WaffeSchildAWM & \WaffeSchildAPA & \WaffeSchildABFa & \WaffeSchildABFb & \WaffeSchildABFc & \WaffeSchildABFd &  \\\hline
+\WaffeSchildB & \WaffeSchildBTyp & \WaffeSchildBINI & \WaffeSchildBWM & \WaffeSchildBPA & \WaffeSchildBBFa & \WaffeSchildBBFb & \WaffeSchildBBFc & \WaffeSchildBBFd &  \\\specialrule{2pt}{0pt}{0pt}
+\multicolumn{10}{!{\VRule[3pt]}l!{\VRule[3pt]}}{\SFKreuzchen{Linkhand}\footnotesize\  Linkhand (PA+1), \SFKreuzchen{Schildkampf I} \footnotesize\ Schildkampf I (PA+2)/\SFKreuzchen{Schildkampf II}\footnotesize\ II (PA+2), \SFKreuzchen{Parierwaffen I}\footnotesize\ Parierwaffen I / \SFKreuzchen{Parierwaffen II}\footnotesize\ II}\\
 \specialrule{3pt}{0pt}{0pt}
-\end{tabular}\\[2.5mm]
+\end{tabular}
+%-----------------------------------------------------------------------------
+% Rüstung & Ausweichen, Wunden
+\begin{tabular}{
+		!{\VRule[3pt]}p{35mm} %Rüstungsstück
+		|p{5mm} %RS
+		|p{5mm} %BE
+		!{\VRule[3pt]}
+	}
+\multicolumn{3}{c}{\Large\textbf{Rüstung}}\\
+\specialrule{3pt}{0pt}{0pt}
+\textbf{Rüstungsstück}   & \textbf{RS}   & \textbf{BE}\\\hline
+\RuestungA & \RuestungARS & \RuestungABE \\\hline
+\RuestungB & \RuestungBRS & \RuestungBBE \\\hline
+\RuestungC & \RuestungCRS & \RuestungCBE \\\hline
+\RuestungD & \RuestungDRS & \RuestungDBE \\\hline
+\RuestungE & \RuestungERS & \RuestungEBE \\\hline
+\textbf{Summe} & \RuestungSummeRS & \RuestungSummeBE \\\hline
+\multicolumn{2}{!{\VRule[3pt]}l|}{\footnotesize Rüstungsgewöhnung \SFKreuzchen{Rüstungsgewöhnung I}I, \SFKreuzchen{Rüstungsgewöhnung II}II, \SFKreuzchen{Rüstungsgewöhnung III}III} & \RuestungsgewoehnungWert\\
+\specialrule{3pt}{0pt}{0pt}
+\end{tabular}\\
+\begin{tabular}{
+		!{\VRule[3pt]}p{6mm} %Kopf
+		|p{5mm} %Brust
+		|p{5mm} %Rücken
+		|p{5mm} %Bauch
+		|p{5mm} %LA
+		|p{5mm} %RA
+		|p{5mm} %LB
+		|p{5mm} %RB
+		|p{5mm} %RsGes
+		|p{5mm} %BEGes
+		!{\VRule[3pt]}
+	}
+	\specialrule{3pt}{0pt}{0pt}
+Ko&Br&Rü&Ba&LA&RA&LB&RA&RS&BE\\\hline
+\RuestungAKopf& & & & & & & & &\\
+\specialrule{3pt}{0pt}{0 pt}
+\end{tabular}
+\\[2.5mm]
 %-----------------------------------------------------------------------------
 % Lebensenergie, Ausdauer etc.
 {\hspace*{3cm}\Large\textbf{Lebensenergie, Ausdauer etc.}}\\[2mm]
@@ -200,7 +219,7 @@ Ringen & \WaffenlosRingenTPKK & \WaffenlosRingenINI & \WaffenlosRingenAT & \Waff
 		!{\VRule[3pt]}
 	}
 \specialrule{3pt}{0pt}{0pt}
-\textbf{Initiative} & INI-Basis - BE = \underline{\BasisINIaktuell} $\pm$ Mod. + W6 (bei SF Klingentänzer +2W6) = \underline{\ \ \ \ \ }\\
+\textbf{Initiative} & INI-Basis - BE = \underline{\directlua{tex.print(\BasisINIaktuell-\RuestungSummeBE)}} $\pm$ Mod. + W6 (bei SF Klingentänzer +2W6) = \underline{\ \ \ \ \ }\\
 \specialrule{3pt}{0pt}{0pt}
 \end{tabular}
 }

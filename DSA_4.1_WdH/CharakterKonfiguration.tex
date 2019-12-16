@@ -1,9 +1,13 @@
+%--------------------------------------------------------------------
+%	Ausrüstung
+%\newcounter{sets}
+%\setcounter{sets}{\length{8, 9, 9}}
 %----------------------------
 %	Informationen
-\def \CharakterName{}
-\def \CharakterRasse{}
-\def \CharakterKultur{}
-\def \CharakterProfession{}
+\def \CharakterName{Kein Name}
+\def \CharakterRasse{Ork/Tscharshai}
+\def \CharakterKultur{Orkland: Tscharshai, Okwach (Elite-Krieger, Priester, Schamanen)}
+\def \CharakterProfession{Stammeskrieger}
 \def \CharakterPortraitBild{Wappen_Leer.png}
 
 \def \CharakterGPBasis{110}
@@ -11,12 +15,12 @@
 \def \CharakterKulturModifikationen{}
 \def \CharakterProfessionModifikationen{}
 
-\def \CharakterGeschlecht{}
-\def \CharakterAlter{}
-\def \CharakterGroesse{ Schritt}
-\def \CharakterGewicht{ Stein}
-\def \CharakterHaarfarbe{}
-\def \CharakterAugenfarbe{}
+\def \CharakterGeschlecht{männlich}
+\def \CharakterAlter{15}
+\def \CharakterGroesse{161 Schritt}
+\def \CharakterGewicht{66 Stein}
+\def \CharakterHaarfarbe{braun-schwarz}
+\def \CharakterAugenfarbe{grau}
 
 \def \CharakterAussehenA{}
 \def \CharakterAussehenB{}
@@ -25,7 +29,7 @@
 
 \def \CharakterStand{}
 \def \CharakterTitel{}
-\def \CharakterSO{}
+\def \CharakterSO{4}
 
 \def \CharakterHintergrundA{}
 \def \CharakterHintergrundB{}
@@ -34,15 +38,17 @@
 \def \CharakterHintergrundE{}
 \def \CharakterHintergrundF{}
 
+\def \Gw {false}
+
 % Charakternotizen
-\def \CharakterNotizGenerationsdatum{01.01.1970}
-\def \CharakterNotizLetzteAenderung{01.01.1970}
-\def \CharakterNotizAnzahlAbenteuer{0}
+\def \CharakterNotizGenerationsdatum{}
+\def \CharakterNotizLetzteAenderung{}
+\def \CharakterNotizAnzahlAbenteuer{}
 \def \CharakterNotizKompilierungsDatum{\today}
 
 %----------------------------
 % Vorteile
-\def \CharakterVorteileA{} % 1. Zeile
+\def \CharakterVorteileA{Dämmerungssicht, Eisern, Kälteresistenz, Natürlicher Rüstungsschutz: 1, Natürliche Waffen Biss (1W6+1), Richtungssinn, Zäher Hund} % 1. Zeile
 \def \CharakterVorteileB{} % 2. Zeile
 \def \CharakterVorteileC{} % 3. Zeile
 \def \CharakterVorteileD{} % 4. Zeile
@@ -50,58 +56,58 @@
 
 %----------------------------
 % Nachteile
-\def \CharakterNachteileA{} % 1. Zeile
-\def \CharakterNachteileB{} % 2. Zeile
-\def \CharakterNachteileC{} % 3. Zeile
-\def \CharakterNachteileD{} % 4. Zeile
-\def \CharakterNachteileE{} % 5. Zeile
+\def \CharakterNachteileA{Aberglaube: 5, Arroganz: 5, Goldgier: 6, Impulsiv, Jähzorn: 8, Neugier: 6, Niedrige Magieresistenz: 1, Randgruppe, Raubtiergeruch} % 1. Zeile
+\def \CharakterNachteileB{Aberglaube: 5, Arroganz: 5, Goldgier: 6, Impulsiv, Jähzorn: 8, Neugier: 6, Niedrige Magieresistenz: 1, Randgruppe, Raubtiergeruch} % 2. Zeile
+\def \CharakterNachteileC{Aberglaube: 5, Arroganz: 5, Goldgier: 6, Impulsiv, Jähzorn: 8, Neugier: 6, Niedrige Magieresistenz: 1, Randgruppe, Raubtiergeruch} % 3. Zeile
+\def \CharakterNachteileD{Aberglaube: 5, Arroganz: 5, Goldgier: 6, Impulsiv, Jähzorn: 8, Neugier: 6, Niedrige Magieresistenz: 1, Randgruppe, Raubtiergeruch} % 4. Zeile
+\def \CharakterNachteileE{Aberglaube: 5, Arroganz: 5, Goldgier: 6, Impulsiv, Jähzorn: 8, Neugier: 6, Niedrige Magieresistenz: 1, Randgruppe, Raubtiergeruch} % 5. Zeile
 
 %----------------------------
 %	Eigenschaften
 % Mut
-\def \EigMUmod{0}
-\def \EigMUstart{0}
-\def \EigMUgesteigert{0}
+\def \EigMUmod{3}
+\def \EigMUstart{14}
+\def \EigMUgesteigert{17}
 % Klugheit
 \def \EigKLmod{0}
-\def \EigKLstart{0}
-\def \EigKLgesteigert{0}
+\def \EigKLstart{10}
+\def \EigKLgesteigert{10}
 % Intuition
 \def \EigINmod{0}
-\def \EigINstart{0}
-\def \EigINgesteigert{0}
+\def \EigINstart{14}
+\def \EigINgesteigert{14}
 % Charisma
-\def \EigCHmod{0}
-\def \EigCHstart{0}
-\def \EigCHgesteigert{0}
+\def \EigCHmod{-2}
+\def \EigCHstart{10}
+\def \EigCHgesteigert{8}
 % Fingerfertigkeit
-\def \EigFFmod{0}
-\def \EigFFstart{0}
-\def \EigFFgesteigert{0}
+\def \EigFFmod{-1}
+\def \EigFFstart{11}
+\def \EigFFgesteigert{10}
 % Gewandtheit
 \def \EigGEmod{0}
-\def \EigGEstart{0}
-\def \EigGEgesteigert{0}
+\def \EigGEstart{14}
+\def \EigGEgesteigert{14}
 % Konstitution
-\def \EigKOmod{0}
-\def \EigKOstart{0}
-\def \EigKOgesteigert{0}
+\def \EigKOmod{2}
+\def \EigKOstart{13}
+\def \EigKOgesteigert{15}
 % Körperkraft
-\def \EigKKmod{0}
-\def \EigKKstart{0}
-\def \EigKKgesteigert{0}
+\def \EigKKmod{2}
+\def \EigKKstart{14}
+\def \EigKKgesteigert{16}
 % Geschwindigkeit
 \def \EigGSmod{0}
-\def \EigGSstart{0}
-\def \EigGSaktuell{0}
+\def \EigGSstart{8}
+\def \EigGSaktuell{8}
 
 %----------------------------
 %	Basiswerte
 % Lebenspunkte
-\def \BasisLEmod{0}
+\def \BasisLEmod{13}
 \def \BasisLEzugekauft{0}
 % Ausdauer
-\def \BasisAUmod{0}
+\def \BasisAUmod{22}
 \def \BasisAUzugekauft{0}
 % Astralenergie
 \def \BasisAEmod{0}
@@ -113,7 +119,7 @@
 \def \BasisKEzugekauft{0}
 \def \BasisKEmaxZugekauft{0}
 % Magieresistenz
-\def \BasisMRmod{0}
+\def \BasisMRmod{-8}
 \def \BasisMRzugekauft{0}
 % INI-Basiswert
 \def \BasisINImod{0}
@@ -126,14 +132,14 @@
 
 %----------------------------
 %	Abenteuerpunkte
-\def \APgesamt{0}
-\def \APeingesetzt{0}
-\def \APguthaben{0}
+\def \APgesamt{480}
+\def \APeingesetzt{478}
+\def \APguthaben{2}
 
 %----------------------------
 %	Sonderfertigkeiten
 % Ausser Kampf
-\def \SFausserKampfA{}
+\def \SFausserKampfA{Kulturkunde (Orks), Steppenkundig}
 \def \SFausserKampfB{}
 \def \SFausserKampfC{}
 \def \SFausserKampfD{}
@@ -155,39 +161,40 @@
 %----------------------------
 %	Talente
 % Basis Kampftechniken
-\def \TalentDolcheAT{0} % Dolche
-\def \TalentDolchePA{0}
-\def \TalentDolcheTaWL{0}
+\def \TalentDolcheAT{12} % Dolche
+\def \TalentDolchePA{9}
+\def \TalentDolcheTaWL{3}
 \def \TalentDolcheTaWR{}
-\def \TalentHiebwaffenAT{0} % Hiebwaffen
-\def \TalentHiebwaffenPA{0}
-\def \TalentHiebwaffenTaWL{0}
+\def \TalentHiebwaffenAT{16} % Hiebwaffen
+\def \TalentHiebwaffenPA{11}
+\def \TalentHiebwaffenTaWL{9}
 \def \TalentHiebwaffenTaWR{}
-\def \TalentRaufenAT{0} % Raufen
-\def \TalentRaufenPA{0}
-\def \TalentRaufenTaWL{0}
+\def \TalentRaufenAT{14} % Raufen
+\def \TalentRaufenPA{11}
+\def \TalentRaufenTaWL{7}
 \def \TalentRaufenTaWR{}
-\def \TalentRingenAT{0} % Ringen
-\def \TalentRingenPA{0}
-\def \TalentRingenTaWL{0}
+\def \TalentRingenAT{10} % Ringen
+\def \TalentRingenPA{11}
+\def \TalentRingenTaWL{3}
 \def \TalentRingenTaWR{}
-\def \TalentSaebelAT{0} % Säbel
-\def \TalentSaebelPA{0}
-\def \TalentSaebelTaWL{0}
+\def \TalentSaebelAT{12} % Säbel
+\def \TalentSaebelPA{9}
+\def \TalentSaebelTaWL{3}
 \def \TalentSaebelTaWR{}
-\def \TalentWurfmesserAT{0} % Wurfmesser
-\def \TalentWurfmesserPA{0}
+\def \TalentWurfmesserAT{8} % Wurfmesser
+\def \TalentWurfmesserPA{}
 \def \TalentWurfmesserTaWL{0}
 \def \TalentWurfmesserTaWR{}
 
 % Extra Kampftechniken
-\def \TalentKampfExtraA{} % 1. extra Kampftechnik:
-\def \TalentKampfExtraASKat{}
-\def \TalentKampfExtraABE{}
-\def \TalentKampfExtraAAT{}
+\def \TalentKampfExtraA{Bogen} % 1. extra Kampftechnik:
+\def \TalentKampfExtraASKat{E}
+\def \TalentKampfExtraABE{BE-3}
+\def \TalentKampfExtraAAT{17}
 \def \TalentKampfExtraAPA{}
-\def \TalentKampfExtraATaWL{}
+\def \TalentKampfExtraATaWL{9}
 \def \TalentKampfExtraATaWR{}
+
 \def \TalentKampfExtraB{} % 2. extra Kampftechnik:
 \def \TalentKampfExtraBSKat{}
 \def \TalentKampfExtraBBE{}
@@ -195,6 +202,7 @@
 \def \TalentKampfExtraBPA{}
 \def \TalentKampfExtraBTaWL{}
 \def \TalentKampfExtraBTaWR{}
+
 \def \TalentKampfExtraC{} % 3. extra Kampftechnik:
 \def \TalentKampfExtraCSKat{}
 \def \TalentKampfExtraCBE{}
@@ -202,6 +210,7 @@
 \def \TalentKampfExtraCPA{}
 \def \TalentKampfExtraCTaWL{}
 \def \TalentKampfExtraCTaWR{}
+
 \def \TalentKampfExtraD{} % 4. extra Kampftechnik:
 \def \TalentKampfExtraDSKat{}
 \def \TalentKampfExtraDBE{}
@@ -209,6 +218,7 @@
 \def \TalentKampfExtraDPA{}
 \def \TalentKampfExtraDTaWL{}
 \def \TalentKampfExtraDTaWR{}
+
 \def \TalentKampfExtraE{} % 5. extra Kampftechnik:
 \def \TalentKampfExtraESKat{}
 \def \TalentKampfExtraEBE{}
@@ -216,6 +226,7 @@
 \def \TalentKampfExtraEPA{}
 \def \TalentKampfExtraETaWL{}
 \def \TalentKampfExtraETaWR{}
+
 \def \TalentKampfExtraF{} % 6. extra Kampftechnik:
 \def \TalentKampfExtraFSKat{}
 \def \TalentKampfExtraFBE{}
@@ -223,6 +234,7 @@
 \def \TalentKampfExtraFPA{}
 \def \TalentKampfExtraFTaWL{}
 \def \TalentKampfExtraFTaWR{}
+
 \def \TalentKampfExtraG{} % 7. extra Kampftechnik:
 \def \TalentKampfExtraGSKat{}
 \def \TalentKampfExtraGBE{}
@@ -230,6 +242,7 @@
 \def \TalentKampfExtraGPA{}
 \def \TalentKampfExtraGTaWL{}
 \def \TalentKampfExtraGTaWR{}
+
 \def \TalentKampfExtraH{} % 8. extra Kampftechnik:
 \def \TalentKampfExtraHSKat{}
 \def \TalentKampfExtraHBE{}
@@ -237,6 +250,7 @@
 \def \TalentKampfExtraHPA{}
 \def \TalentKampfExtraHTaWL{}
 \def \TalentKampfExtraHTaWR{}
+
 \def \TalentKampfExtraI{} % 9. extra Kampftechnik:
 \def \TalentKampfExtraISKat{}
 \def \TalentKampfExtraIBE{}
@@ -244,7 +258,8 @@
 \def \TalentKampfExtraIPA{}
 \def \TalentKampfExtraITaWL{}
 \def \TalentKampfExtraITaWR{}
-\def \TalentKampfExtraJ{} % 10. extra Kampftechnik
+
+\def \TalentKampfExtraJ{} % 10. extra Kampftechnik:
 \def \TalentKampfExtraJSKat{}
 \def \TalentKampfExtraJBE{}
 \def \TalentKampfExtraJAT{}
@@ -253,23 +268,23 @@
 \def \TalentKampfExtraJTaWR{}
 
 % Basis Körperliche Talente
-\def \TalentAthletikTaWL{0} % Athletik
+\def \TalentAthletikTaWL{7} % Athletik
 \def \TalentAthletikTaWR{}
-\def \TalentKletternTaWL{0} % Klettern
+\def \TalentKletternTaWL{2} % Klettern
 \def \TalentKletternTaWR{}
-\def \TalentKoerperbeherrschungTaWL{0} % Körperbeherrschung
+\def \TalentKoerperbeherrschungTaWL{6} % Körperbeherrschung
 \def \TalentKoerperbeherrschungTaWR{}
-\def \TalentSchleichenTaWL{0} % Schleichen
+\def \TalentSchleichenTaWL{4} % Schleichen
 \def \TalentSchleichenTaWR{}
 \def \TalentSchwimmenTaWL{0} % Schwimmen
 \def \TalentSchwimmenTaWR{}
-\def \TalentSelbstbeherrschungTaWL{0} % Selbstbeherrschung
+\def \TalentSelbstbeherrschungTaWL{3} % Selbstbeherrschung
 \def \TalentSelbstbeherrschungTaWR{}
-\def \TalentSichVersteckenTaWL{0} % Sich Verstecken
+\def \TalentSichVersteckenTaWL{3} % Sich Verstecken
 \def \TalentSichVersteckenTaWR{}
-\def \TalentSingenTaWL{0} % Singen
+\def \TalentSingenTaWL{-2} % Singen
 \def \TalentSingenTaWR{}
-\def \TalentSinnesschaerfeTaWL{0} % Sinnesschärfe
+\def \TalentSinnesschaerfeTaWL{6} % Sinnesschärfe
 \def \TalentSinnesschaerfeTaWR{}
 \def \TalentTanzenTaWL{0} % Tanzen
 \def \TalentTanzenTaWR{}
@@ -278,205 +293,247 @@
 
 % Extra Körperliche Talente
 \def \TalentKoerperExtraA{} % 1. extra körperliches talent:
-\def \TalentKoerperExtraAProbe{}
+\def \TalentKoerperExtraAProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentKoerperExtraABE{}
 \def \TalentKoerperExtraATaWL{}
 \def \TalentKoerperExtraATaWR{}
+
 \def \TalentKoerperExtraB{} % 2. extra körperliches talent:
-\def \TalentKoerperExtraBProbe{}
+\def \TalentKoerperExtraBProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentKoerperExtraBBE{}
 \def \TalentKoerperExtraBTaWL{}
 \def \TalentKoerperExtraBTaWR{}
+
 \def \TalentKoerperExtraC{} % 3. extra körperliches talent:
-\def \TalentKoerperExtraCProbe{}
+\def \TalentKoerperExtraCProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentKoerperExtraCBE{}
 \def \TalentKoerperExtraCTaWL{}
 \def \TalentKoerperExtraCTaWR{}
+
 \def \TalentKoerperExtraD{} % 4. extra körperliches talent:
-\def \TalentKoerperExtraDProbe{}
+\def \TalentKoerperExtraDProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentKoerperExtraDBE{}
 \def \TalentKoerperExtraDTaWL{}
 \def \TalentKoerperExtraDTaWR{}
+
 \def \TalentKoerperExtraE{} % 5. extra körperliches talent:
-\def \TalentKoerperExtraEProbe{}
+\def \TalentKoerperExtraEProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentKoerperExtraEBE{}
 \def \TalentKoerperExtraETaWL{}
 \def \TalentKoerperExtraETaWR{}
 
+
 % Basis Gesellschaftliche Talente
-\def \TalentMenschenkenntnisTaWL{0} % Menschenkenntnis
+\def \TalentMenschenkenntnisTaWL{1} % Menschenkenntnis
 \def \TalentMenschenkenntnisTaWR{}
-\def \TalentUeberredenTaWL{0} % Überreden
+\def \TalentUeberredenTaWL{4} % Überreden
 \def \TalentUeberredenTaWR{}
 
 % Extra Gesellschaftliche Talente
 \def \TalentGesellschaftExtraA{} % 1. extra gesellschaftliches Talent:
-\def \TalentGesellschaftExtraAProbe{}
+\def \TalentGesellschaftExtraAProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentGesellschaftExtraATaWL{}
 \def \TalentGesellschaftExtraATaWR{}
+
 \def \TalentGesellschaftExtraB{} % 2. extra gesellschaftliches Talent:
-\def \TalentGesellschaftExtraBProbe{}
+\def \TalentGesellschaftExtraBProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentGesellschaftExtraBTaWL{}
 \def \TalentGesellschaftExtraBTaWR{}
+
 \def \TalentGesellschaftExtraC{} % 3. extra gesellschaftliches Talent:
-\def \TalentGesellschaftExtraCProbe{}
+\def \TalentGesellschaftExtraCProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentGesellschaftExtraCTaWL{}
 \def \TalentGesellschaftExtraCTaWR{}
+
 \def \TalentGesellschaftExtraD{} % 4. extra gesellschaftliches Talent:
-\def \TalentGesellschaftExtraDProbe{}
+\def \TalentGesellschaftExtraDProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentGesellschaftExtraDTaWL{}
 \def \TalentGesellschaftExtraDTaWR{}
+
 \def \TalentGesellschaftExtraE{} % 5. extra gesellschaftliches Talent:
-\def \TalentGesellschaftExtraEProbe{}
+\def \TalentGesellschaftExtraEProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentGesellschaftExtraETaWL{}
 \def \TalentGesellschaftExtraETaWR{}
 
+
 % Basis Natur-Talente
-\def \TalentFaehrtensuchenTaWL{0} % Fährtensuchen
+\def \TalentFaehrtensuchenTaWL{2} % Fährtensuchen
 \def \TalentFaehrtensuchenTaWR{}
-\def \TalentOrientierungTaWL{0} % Orientierung
+\def \TalentOrientierungTaWL{5} % Orientierung
 \def \TalentOrientierungTaWR{}
-\def \TalentWildnislebenTaWL{0} % Wildnisleben
+\def \TalentWildnislebenTaWL{4} % Wildnisleben
 \def \TalentWildnislebenTaWR{}
 
 % Extra Natur-Talente
-\def \TalentNaturExtraA{} % 1. extra Natur-Talent:
-\def \TalentNaturExtraAProbe{}
-\def \TalentNaturExtraATaWL{}
+\def \TalentNaturExtraA{Ansitzjagd incl Waffe} % 1. extra Natur-Talent:
+\def \TalentNaturExtraAProbe{\StrSubstitute{MU/IN/GE}{/}{ $\bullet$ }}
+\def \TalentNaturExtraATaWL{4}
 \def \TalentNaturExtraATaWR{}
-\def \TalentNaturExtraB{} % 2. extra Natur-Talent:
-\def \TalentNaturExtraBProbe{}
-\def \TalentNaturExtraBTaWL{}
+
+\def \TalentNaturExtraB{Kräuter suchen} % 2. extra Natur-Talent:
+\def \TalentNaturExtraBProbe{\StrSubstitute{MU/IN/FF}{/}{ $\bullet$ }}
+\def \TalentNaturExtraBTaWL{2}
 \def \TalentNaturExtraBTaWR{}
-\def \TalentNaturExtraC{} % 3. extra Natur-Talent:
-\def \TalentNaturExtraCProbe{}
-\def \TalentNaturExtraCTaWL{}
+
+\def \TalentNaturExtraC{Nahrung sammeln} % 3. extra Natur-Talent:
+\def \TalentNaturExtraCProbe{\StrSubstitute{MU/IN/FF}{/}{ $\bullet$ }}
+\def \TalentNaturExtraCTaWL{2}
 \def \TalentNaturExtraCTaWR{}
-\def \TalentNaturExtraD{} % 4. extra Natur-Talent:
-\def \TalentNaturExtraDProbe{}
-\def \TalentNaturExtraDTaWL{}
+
+\def \TalentNaturExtraD{Pirschjagd incl Waffe} % 4. extra Natur-Talent:
+\def \TalentNaturExtraDProbe{\StrSubstitute{MU/IN/GE}{/}{ $\bullet$ }}
+\def \TalentNaturExtraDTaWL{4}
 \def \TalentNaturExtraDTaWR{}
 
+\def \TalentNaturExtraE{} % 5. extra Natur-Talent:
+\def \TalentNaturExtraEProbe{\StrSubstitute{}{/}{ $\bullet$ }}
+\def \TalentNaturExtraETaWL{}
+\def \TalentNaturExtraETaWR{}
+
+
 % Basis Wissenstalente
-\def \TalentGoetterKulteTaWL{0} % Götter/Kulte
+\def \TalentGoetterKulteTaWL{1} % Götter/Kulte
 \def \TalentGoetterKulteTaWR{}
-\def \TalentRechnenTaWL{0} % Rechnen
+\def \TalentRechnenTaWL{1} % Rechnen
 \def \TalentRechnenTaWR{}
-\def \TalentSagenLegendenTaWL{0} % Sagen/Legenden
+\def \TalentSagenLegendenTaWL{1} % Sagen/Legenden
 \def \TalentSagenLegendenTaWR{}
 
 % Extra Wissenstalente
-\def \TalentWissenExtraA{} % 1. extra Wissenstalent:
-\def \TalentWissenExtraAProbe{}
-\def \TalentWissenExtraATaWL{}
+\def \TalentWissenExtraA{Kriegskunst} % 1. extra Wissen-Talent:
+\def \TalentWissenExtraAProbe{\StrSubstitute{MU/KL/CH}{/}{ $\bullet$ }}
+\def \TalentWissenExtraATaWL{5}
 \def \TalentWissenExtraATaWR{}
-\def \TalentWissenExtraB{} % 2. extra Wissenstalent:
-\def \TalentWissenExtraBProbe{}
-\def \TalentWissenExtraBTaWL{}
+
+\def \TalentWissenExtraB{Pflanzenkunde} % 2. extra Wissen-Talent:
+\def \TalentWissenExtraBProbe{\StrSubstitute{KL/IN/FF}{/}{ $\bullet$ }}
+\def \TalentWissenExtraBTaWL{1}
 \def \TalentWissenExtraBTaWR{}
-\def \TalentWissenExtraC{} % 3. extra Wissenstalent:
-\def \TalentWissenExtraCProbe{}
-\def \TalentWissenExtraCTaWL{}
+
+\def \TalentWissenExtraC{Schätzen} % 3. extra Wissen-Talent:
+\def \TalentWissenExtraCProbe{\StrSubstitute{KL/IN/IN}{/}{ $\bullet$ }}
+\def \TalentWissenExtraCTaWL{2}
 \def \TalentWissenExtraCTaWR{}
-\def \TalentWissenExtraD{} % 4. extra Wissenstalent:
-\def \TalentWissenExtraDProbe{}
-\def \TalentWissenExtraDTaWL{}
+
+\def \TalentWissenExtraD{Tierkunde} % 4. extra Wissen-Talent:
+\def \TalentWissenExtraDProbe{\StrSubstitute{MU/KL/IN}{/}{ $\bullet$ }}
+\def \TalentWissenExtraDTaWL{2}
 \def \TalentWissenExtraDTaWR{}
-\def \TalentWissenExtraE{} % 5. extra Wissenstalent:
-\def \TalentWissenExtraEProbe{}
+
+\def \TalentWissenExtraE{} % 5. extra Wissen-Talent:
+\def \TalentWissenExtraEProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraETaWL{}
 \def \TalentWissenExtraETaWR{}
-\def \TalentWissenExtraF{} % 6. extra Wissenstalent:
-\def \TalentWissenExtraFProbe{}
+
+\def \TalentWissenExtraF{} % 6. extra Wissen-Talent:
+\def \TalentWissenExtraFProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraFTaWL{}
 \def \TalentWissenExtraFTaWR{}
-\def \TalentWissenExtraG{} % 7. extra Wissenstalent:
-\def \TalentWissenExtraGProbe{}
+
+\def \TalentWissenExtraG{} % 7. extra Wissen-Talent:
+\def \TalentWissenExtraGProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraGTaWL{}
 \def \TalentWissenExtraGTaWR{}
-\def \TalentWissenExtraH{} % 8. extra Wissenstalent:
-\def \TalentWissenExtraHProbe{}
+
+\def \TalentWissenExtraH{} % 8. extra Wissen-Talent:
+\def \TalentWissenExtraHProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraHTaWL{}
 \def \TalentWissenExtraHTaWR{}
-\def \TalentWissenExtraI{} % 9. extra Wissenstalent:
-\def \TalentWissenExtraIProbe{}
+
+\def \TalentWissenExtraI{} % 9. extra Wissen-Talent:
+\def \TalentWissenExtraIProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraITaWL{}
 \def \TalentWissenExtraITaWR{}
-\def \TalentWissenExtraJ{} % 10. extra Wissenstalent:
-\def \TalentWissenExtraJProbe{}
+
+\def \TalentWissenExtraJ{} % 10. extra Wissen-Talent:
+\def \TalentWissenExtraJProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraJTaWL{}
 \def \TalentWissenExtraJTaWR{}
-\def \TalentWissenExtraK{} % 11. extra Wissenstalent:
-\def \TalentWissenExtraKProbe{}
+
+\def \TalentWissenExtraK{} % 11. extra Wissen-Talent:
+\def \TalentWissenExtraKProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraKTaWL{}
 \def \TalentWissenExtraKTaWR{}
-\def \TalentWissenExtraL{} % 12. extra Wissenstalent:
-\def \TalentWissenExtraLProbe{}
+
+\def \TalentWissenExtraL{} % 12. extra Wissen-Talent:
+\def \TalentWissenExtraLProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraLTaWL{}
 \def \TalentWissenExtraLTaWR{}
-\def \TalentWissenExtraM{} % 13. extra Wissenstalent:
-\def \TalentWissenExtraMProbe{}
+
+\def \TalentWissenExtraM{} % 13. extra Wissen-Talent:
+\def \TalentWissenExtraMProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraMTaWL{}
 \def \TalentWissenExtraMTaWR{}
-\def \TalentWissenExtraN{} % 14. extra Wissenstalent:
-\def \TalentWissenExtraNProbe{}
+
+\def \TalentWissenExtraN{} % 14. extra Wissen-Talent:
+\def \TalentWissenExtraNProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentWissenExtraNTaWL{}
 \def \TalentWissenExtraNTaWR{}
 
 % Sprachen & Schriften
-\def \TalentMuttersprache{} % Muttersprache:
-\def \TalentMutterspracheKomp{} % Komplexität
-\def \TalentMutterspracheTaWL{}
-\def \TalentMutterspracheTaWR{}
-\def \TalentSpracheSchriftExtraA{} % 1. extra Sprache/Schrift:
-\def \TalentSpracheSchriftExtraAKomp{}
-\def \TalentSpracheSchriftExtraATaWL{}
+%\def \TalentMuttersprache{Ologhaijan} % Muttersprache:
+%\def \TalentMutterspracheKomp{15} % Komplexität
+%\def \TalentMutterspracheTaWL{8}
+%\def \TalentMutterspracheTaWR{}
+\def \TalentSpracheSchriftExtraA{\IfStrEq{}{true}{\textbf{Garethi}}{Garethi}} % 1. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraAKomp{18}
+\def \TalentSpracheSchriftExtraATaWL{3}
 \def \TalentSpracheSchriftExtraATaWR{}
-\def \TalentSpracheSchriftExtraB{} % 2. extra Sprache/Schrift:
-\def \TalentSpracheSchriftExtraBKomp{}
-\def \TalentSpracheSchriftExtraBTaWL{}
+
+\def \TalentSpracheSchriftExtraB{\IfStrEq{true}{true}{\textbf{Ologhaijan}}{Ologhaijan}} % 2. extra Sprache/Schrift:
+\def \TalentSpracheSchriftExtraBKomp{15}
+\def \TalentSpracheSchriftExtraBTaWL{8}
 \def \TalentSpracheSchriftExtraBTaWR{}
-\def \TalentSpracheSchriftExtraC{} % 3. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraC{\IfStrEq{}{true}{\textbf{}}{}} % 3. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraCKomp{}
 \def \TalentSpracheSchriftExtraCTaWL{}
 \def \TalentSpracheSchriftExtraCTaWR{}
-\def \TalentSpracheSchriftExtraD{} % 4. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraD{\IfStrEq{}{true}{\textbf{}}{}} % 4. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraDKomp{}
 \def \TalentSpracheSchriftExtraDTaWL{}
 \def \TalentSpracheSchriftExtraDTaWR{}
-\def \TalentSpracheSchriftExtraE{} % 5. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraE{\IfStrEq{}{true}{\textbf{}}{}} % 5. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraEKomp{}
 \def \TalentSpracheSchriftExtraETaWL{}
 \def \TalentSpracheSchriftExtraETaWR{}
-\def \TalentSpracheSchriftExtraF{} % 6. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraF{\IfStrEq{}{true}{\textbf{}}{}} % 6. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraFKomp{}
 \def \TalentSpracheSchriftExtraFTaWL{}
 \def \TalentSpracheSchriftExtraFTaWR{}
-\def \TalentSpracheSchriftExtraG{} % 7. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraG{\IfStrEq{}{true}{\textbf{}}{}} % 7. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraGKomp{}
 \def \TalentSpracheSchriftExtraGTaWL{}
 \def \TalentSpracheSchriftExtraGTaWR{}
-\def \TalentSpracheSchriftExtraH{} % 8. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraH{\IfStrEq{}{true}{\textbf{}}{}} % 8. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraHKomp{}
 \def \TalentSpracheSchriftExtraHTaWL{}
 \def \TalentSpracheSchriftExtraHTaWR{}
-\def \TalentSpracheSchriftExtraI{} % 9. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraI{\IfStrEq{}{true}{\textbf{}}{}} % 9. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraIKomp{}
 \def \TalentSpracheSchriftExtraITaWL{}
 \def \TalentSpracheSchriftExtraITaWR{}
-\def \TalentSpracheSchriftExtraJ{} % 10. extra Sprache/Schrift:
+
+\def \TalentSpracheSchriftExtraJ{\IfStrEq{}{true}{\textbf{}}{}} % 10. extra Sprache/Schrift:
 \def \TalentSpracheSchriftExtraJKomp{}
 \def \TalentSpracheSchriftExtraJTaWL{}
 \def \TalentSpracheSchriftExtraJTaWR{}
 
+
 % Basis  Handwerkliche Talente
-\def \TalentHeilkundeWundenTaWL{0} % Heilkunde Wunden
+\def \TalentHeilkundeWundenTaWL{4} % Heilkunde Wunden
 \def \TalentHeilkundeWundenTaWR{}
 \def \TalentHolzbearbeitungTaWL{0} % Holzbearbeitung
 \def \TalentHolzbearbeitungTaWR{}
 \def \TalentKochenTaWL{0} % Kochen
 \def \TalentKochenTaWR{}
-\def \TalentLederarbeitenTaWL{0} % Lederarbeiten
+\def \TalentLederarbeitenTaWL{3} % Lederarbeiten
 \def \TalentLederarbeitenTaWR{}
 \def \TalentMalenZeichnenTaWL{0} % Malen/Zeichnen
 \def \TalentMalenZeichnenTaWR{}
@@ -484,76 +541,86 @@
 \def \TalentSchneidernTaWR{}
 
 % Extra Handwerkliche Talente
-\def \TalentHandwerkExtraA{} % 1. extra handwerkliches Talent:
-\def \TalentHandwerkExtraAProbe{}
-\def \TalentHandwerkExtraATaWL{}
+\def \TalentHandwerkExtraA{Fahrzeug lenken} % 1. extra handwerkliches Talent:
+\def \TalentHandwerkExtraAProbe{\StrSubstitute{IN/CH/FF}{/}{ $\bullet$ }}
+\def \TalentHandwerkExtraATaWL{2}
 \def \TalentHandwerkExtraATaWR{}
-\def \TalentHandwerkExtraB{} % 2. extra handwerkliches Talent:
-\def \TalentHandwerkExtraBProbe{}
-\def \TalentHandwerkExtraBTaWL{}
+
+\def \TalentHandwerkExtraB{Feuersteinbearbeitung} % 2. extra handwerkliches Talent:
+\def \TalentHandwerkExtraBProbe{\StrSubstitute{KL/FF/FF}{/}{ $\bullet$ }}
+\def \TalentHandwerkExtraBTaWL{1}
 \def \TalentHandwerkExtraBTaWR{}
-\def \TalentHandwerkExtraC{} % 3. extra handwerkliches Talent:
-\def \TalentHandwerkExtraCProbe{}
-\def \TalentHandwerkExtraCTaWL{}
+
+\def \TalentHandwerkExtraC{Viehzucht} % 3. extra handwerkliches Talent:
+\def \TalentHandwerkExtraCProbe{\StrSubstitute{KL/IN/KK}{/}{ $\bullet$ }}
+\def \TalentHandwerkExtraCTaWL{1}
 \def \TalentHandwerkExtraCTaWR{}
+
 \def \TalentHandwerkExtraD{} % 4. extra handwerkliches Talent:
-\def \TalentHandwerkExtraDProbe{}
+\def \TalentHandwerkExtraDProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentHandwerkExtraDTaWL{}
 \def \TalentHandwerkExtraDTaWR{}
+
 \def \TalentHandwerkExtraE{} % 5. extra handwerkliches Talent:
-\def \TalentHandwerkExtraEProbe{}
+\def \TalentHandwerkExtraEProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentHandwerkExtraETaWL{}
 \def \TalentHandwerkExtraETaWR{}
+
 \def \TalentHandwerkExtraF{} % 6. extra handwerkliches Talent:
-\def \TalentHandwerkExtraFProbe{}
+\def \TalentHandwerkExtraFProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentHandwerkExtraFTaWL{}
 \def \TalentHandwerkExtraFTaWR{}
+
 \def \TalentHandwerkExtraG{} % 7. extra handwerkliches Talent:
-\def \TalentHandwerkExtraGProbe{}
+\def \TalentHandwerkExtraGProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentHandwerkExtraGTaWL{}
 \def \TalentHandwerkExtraGTaWR{}
+
 \def \TalentHandwerkExtraH{} % 8. extra handwerkliches Talent:
-\def \TalentHandwerkExtraHProbe{}
+\def \TalentHandwerkExtraHProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentHandwerkExtraHTaWL{}
 \def \TalentHandwerkExtraHTaWR{}
+
 \def \TalentHandwerkExtraI{} % 9. extra handwerkliches Talent:
-\def \TalentHandwerkExtraIProbe{}
+\def \TalentHandwerkExtraIProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentHandwerkExtraITaWL{}
 \def \TalentHandwerkExtraITaWR{}
+
 \def \TalentHandwerkExtraJ{} % 10. extra handwerkliches Talent:
-\def \TalentHandwerkExtraJProbe{}
+\def \TalentHandwerkExtraJProbe{\StrSubstitute{}{/}{ $\bullet$ }}
 \def \TalentHandwerkExtraJTaWL{}
 \def \TalentHandwerkExtraJTaWR{}
+
 
 %----------------------------
 %	Waffen & Kampfwerte
 % Nahkampf
-\def \WaffeNahkampfA{} % 1. Nahkampfwaffe
-\def \WaffeNahkampfATypeBE{} % Typ/eBE
-\def \WaffeNahkampfADK{} % DK
-\def \WaffeNahkampfATP{} % TP
-\def \WaffeNahkampfATPKK{} % TP/KK
-\def \WaffeNahkampfAINI{} % INI
-\def \WaffeNahkampfAWM{} % WM
-\def \WaffeNahkampfAAT{} % AT
-\def \WaffeNahkampfAPA{} % PA
-\def \WaffeNahkampfABFa{} % Bruchfaktor: 1. Spalte
-\def \WaffeNahkampfABFb{} % Bruchfaktor: 2. Spalte
+\def \WaffeNahkampfA{Byakka} % 1. Nahkampfwaffe
+\def \WaffeNahkampfATypeBE{Hi/BE-4} % Typ/eBE
+\def \WaffeNahkampfADK{N } % DK
+\def \WaffeNahkampfATP{1W+5} % TP
+\def \WaffeNahkampfATPKK{14 / 2} % TP/KK
+\def \WaffeNahkampfAINI{-1} % INI
+\def \WaffeNahkampfAWM{0 /-2} % WM
+\def \WaffeNahkampfAAT{16} % AT
+\def \WaffeNahkampfAPA{9} % PA
+\def \WaffeNahkampfABFa{3} % Bruchfaktor: 1. Spalte
+\def \WaffeNahkampfABFb{3} % Bruchfaktor: 2. Spalte
 \def \WaffeNahkampfABFc{} % Bruchfaktor: 3. Spalte
 \def \WaffeNahkampfABFd{} % Bruchfaktor: 4. Spalte
 \def \WaffeNahkampfABFe{} % Bruchfaktor: 5. Spalte
 
-\def \WaffeNahkampfB{} % 2. Nahkampfwaffe
-\def \WaffeNahkampfBTypeBE{} % Typ/eBE
-\def \WaffeNahkampfBDK{} % DK
-\def \WaffeNahkampfBTP{} % TP
-\def \WaffeNahkampfBTPKK{} % TP/KK
-\def \WaffeNahkampfBINI{} % INI
-\def \WaffeNahkampfBWM{} % WM
-\def \WaffeNahkampfBAT{} % AT
-\def \WaffeNahkampfBPA{} % PA
-\def \WaffeNahkampfBBFa{} % Bruchfaktor: 1. Spalte
-\def \WaffeNahkampfBBFb{} % Bruchfaktor: 2. Spalte
+\def \WaffeNahkampfB{Byakka (S1)} % 2. Nahkampfwaffe
+\def \WaffeNahkampfBTypeBE{Hi/BE-4} % Typ/eBE
+\def \WaffeNahkampfBDK{N } % DK
+\def \WaffeNahkampfBTP{1W+5} % TP
+\def \WaffeNahkampfBTPKK{14 / 2} % TP/KK
+\def \WaffeNahkampfBINI{-1} % INI
+\def \WaffeNahkampfBWM{0 /-2} % WM
+\def \WaffeNahkampfBAT{15} % AT
+\def \WaffeNahkampfBPA{9} % PA
+\def \WaffeNahkampfBBFa{3} % Bruchfaktor: 1. Spalte
+\def \WaffeNahkampfBBFb{3} % Bruchfaktor: 2. Spalte
 \def \WaffeNahkampfBBFc{} % Bruchfaktor: 3. Spalte
 \def \WaffeNahkampfBBFd{} % Bruchfaktor: 4. Spalte
 \def \WaffeNahkampfBBFe{} % Bruchfaktor: 5. Spalte
@@ -604,17 +671,17 @@
 \def \WaffeNahkampfEBFe{} % Bruchfaktor: 5. Spalte
 
 % Sonderfertigkeiten Nahkampf
-\def \SonderfertigkeitenNahkampfA{} % Nahkampf Sonderfertigkeiten (1. Zeile)
+\def \SonderfertigkeitenNahkampfA{Aufmerksamkeit, Kampfreflexe, Linkhand, Schildkampf I, Sturmangriff, Waffenloser Kampfstil: Hammerfaust, Wuchtschlag} % Nahkampf Sonderfertigkeiten (1. Zeile)
 \def \SonderfertigkeitenNahkampfB{} % Nahkampf Sonderfertigkeiten (2. Zeile)
 \def \SonderfertigkeitenNahkampfC{} % Nahkampf Sonderfertigkeiten (3. Zeile)
 
 % Fernkampf
-\def \WaffeFernkampfA{} % 1. Fernkampfwaffe
-\def \WaffeFernkampfATypeBE{} % Typ/eBE
-\def \WaffeFernkampfATP{} % TP
-\def \WaffeFernkampfAEntfernung{} % Entfernungen
-\def \WaffeFernkampfATPEntfernung{} % TP/Entfernungen
-\def \WaffeFernkampfAFK{} % FK
+\def \WaffeFernkampfA{Orkischer Reiterbogen} % 1. Fernkampfwaffe
+\def \WaffeFernkampfATypeBE{Bo/BE-3} % Typ/eBE
+\def \WaffeFernkampfATP{1W+5} % TP
+\def \WaffeFernkampfAEntfernung{5 / 15 / 30 / 60 / 100} % Entfernungen
+\def \WaffeFernkampfATPEntfernung{3 / 1 / 0 / -1 / -2} % TP/Entfernungen
+\def \WaffeFernkampfAFK{17} % FK
 \def \WaffeFernkampfAGeschosseA{} % Geschosse: 1. Spalte
 \def \WaffeFernkampfAGeschosseB{} % Geschosse: 2. Spalte
 \def \WaffeFernkampfAGeschosseC{} % Geschosse: 3. Spalte
@@ -662,20 +729,20 @@
 \def \SonderfertigkeitenFernkampfB{} % Fernkampf Sonderfertigkeiten (2. Zeile)
 
 % Waffenloser Kampf
-\def \WaffenlosRaufenTPKK{} %Raufen
-\def \WaffenlosRaufenINI{}
-\def \WaffenlosRaufenAT{}
-\def \WaffenlosRaufenPA{}
-\def \WaffenlosRaufenTPA{}
+\def \WaffenlosRaufenTPKK{10/3} %Raufen
+\def \WaffenlosRaufenINI{0}
+\def \WaffenlosRaufenAT{15}
+\def \WaffenlosRaufenPA{11}
+\def \WaffenlosRaufenTPA{1W+2}
 
-\def \WaffenlosRingenTPKK{} %Ringen
-\def \WaffenlosRingenINI{}
-\def \WaffenlosRingenAT{}
-\def \WaffenlosRaufenPA{}
-\def \WaffenlosRaufenTPA{}
+\def \WaffenlosRingenTPKK{10/3} %Ringen
+\def \WaffenlosRingenINI{0}
+\def \WaffenlosRingenAT{10}
+\def \WaffenlosRaufenPA{10}
+\def \WaffenlosRaufenTPA{1W+2}
 
 % Sonderfertigkeiten Waffenloser Kampf
-\def \SonderfertigkeitenWaffeloserKampfA{} % Sonderfertigkeiten/Manöver Waffenloser Kampf (1. Zeile)
+\def \SonderfertigkeitenWaffeloserKampfA{Auspendeln, Biss, Block, Doppelschlag, Eisenarm, Gerade, Handkante, Kreuzblock, Schmetterschlag, Schwinger} % Sonderfertigkeiten/Manöver Waffenloser Kampf (1. Zeile)
 \def \SonderfertigkeitenWaffeloserKampfB{} % Sonderfertigkeiten/Manöver Waffenloser Kampf (2. Zeile)
 \def \SonderfertigkeitenWaffeloserKampfC{} % Sonderfertigkeiten/Manöver Waffenloser Kampf (3. Zeile)
 
@@ -719,13 +786,21 @@
 \def \RuestungERS{}
 \def \RuestungEBE{}
 
-\def \RuestungSummeRS{0}
-\def \RuestungSummeBE{0}
-\def \RuestungsgewoehnungWert{0}
+\def \RuestungSummeRS{3}
+\def \RuestungSummeBE{1}
+\def \RuestungsgewoehnungWert{}
+
+% Zonenrüstung
+\def \RuestungAKopf{3}
+\def \RuestungABrust{3}
+\def \RuestungARuecken{3}
+\def \RuestungABauch{3}
+\def \RuestungALA{3}
+\def \RuestungARA{3}
 
 %----------------------------
 %	Ausweichen
-\def \AusweichenSumme{0}
+\def \AusweichenSumme{8}
 
 %----------------------------
 %	Ausrüstung
@@ -866,10 +941,10 @@
 \def \ProviantRechtsDRationen{}
 
 % Vermögen
-\def \VermoegenDukaten{0}
-\def \VermoegenSilbertaler{0}
-\def \VermoegenHeller{0}
-\def \VermoegenKreuzer{0}
+\def \VermoegenDukaten{}
+\def \VermoegenSilbertaler{}
+\def \VermoegenHeller{}
+\def \VermoegenKreuzer{}
 \def \SonstigerBesitzA{}
 \def \SonstigerBesitzB{}
 \def \SonstigerBesitzC{}
@@ -885,7 +960,7 @@
 \def \VerbindungenH{}
 
 % Notizen
-\def \NotizA{}
+\def \NotizA{Nahkampf, Kampf, Manöver, Kampf, Manöver, Kampf, Manöver, Kampf, Manöver, Kampf, Manöver, Kampf, Manöver, Kampf, Manöver, Kampf, Nahkampf, Kampf, Manöver, Kampf, Sonst, Nahkampf, Kampf, Nahkampf, Kampf, Manöver, Kampf, Manöver, Kampf, Geländekunde, Sonst, Nahkampf, Kampf, Nahkampf, Kampf, Nahkampf, Kampf}
 \def \NotizB{}
 \def \NotizC{}
 \def \NotizD{$\parallel$ Generiert: \CharakterNotizGenerationsdatum\ $\parallel$ Letzte Änderung: \CharakterNotizLetzteAenderung\ $\parallel$ Kompiliert: \CharakterNotizKompilierungsDatum\ $\parallel$ Erlebte Abenteuer: \CharakterNotizAnzahlAbenteuer\ $\parallel$}

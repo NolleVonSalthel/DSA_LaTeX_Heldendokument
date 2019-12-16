@@ -98,6 +98,8 @@
 %TODO SF einberechnen
 \newcounter{cINIaktuell}
 \setcounter{cINIaktuell}{\BasisINImod + \BasisINIstart}
+\IfSubStr{\SonderfertigkeitenNahkampfA\SonderfertigkeitenNahkampfB\SonderfertigkeitenNahkampfC\SFausserKampfA\SFausserKampfB\SFausserKampfC\SFausserKampfD\SFausserKampfE\SFausserKampfF}{Kampfgespür}{\addtocounter{cINIaktuell}{2}}{}
+\IfSubStr{\SonderfertigkeitenNahkampfA\SonderfertigkeitenNahkampfB\SonderfertigkeitenNahkampfC\SFausserKampfA\SFausserKampfB\SFausserKampfC\SFausserKampfD\SFausserKampfE\SFausserKampfF}{Kampfreflexe}{\addtocounter{cINIaktuell}{4}}{}
 \def \BasisINIaktuell{\arabic{cINIaktuell}}
 
 \newcounter{cATstart} % Angriff-Basis: (MU + GE + KK) / 5
@@ -145,19 +147,108 @@
 \def \KampfwerteRingen{\makebox[2.5mm][c]{\TalentRingenAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentRingenPA}}
 \def \KampfwerteSaebel{\makebox[2.5mm][c]{\TalentSaebelAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentSaebelPA}}
 \def \KampfwerteWurfmesser{\makebox[2.5mm][c]{\TalentWurfmesserAT}\KampfwerteTrenner\makebox[2.5mm][c]{-}}
-
+	
 % Extra Kampftechniken
-\def \KampfwerteKampfExtraA{\makebox[2.5mm][c]{\TalentKampfExtraAAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraAPA}}
-\def \KampfwerteKampfExtraB{\makebox[2.5mm][c]{\TalentKampfExtraBAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraBPA}}
-\def \KampfwerteKampfExtraC{\makebox[2.5mm][c]{\TalentKampfExtraCAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraCPA}}
-\def \KampfwerteKampfExtraD{\makebox[2.5mm][c]{\TalentKampfExtraDAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraDPA}}
-\def \KampfwerteKampfExtraE{\makebox[2.5mm][c]{\TalentKampfExtraEAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraEPA}}
-\def \KampfwerteKampfExtraF{\makebox[2.5mm][c]{\TalentKampfExtraFAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraFPA}}
-\def \KampfwerteKampfExtraG{\makebox[2.5mm][c]{\TalentKampfExtraGAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraGPA}}
-\def \KampfwerteKampfExtraH{\makebox[2.5mm][c]{\TalentKampfExtraHAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraHPA}}
-\def \KampfwerteKampfExtraI{\makebox[2.5mm][c]{\TalentKampfExtraIAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraIPA}}
-\def \KampfwerteKampfExtraJ{\makebox[2.5mm][c]{\TalentKampfExtraJAT}\KampfwerteTrenner\makebox[2.5mm][c]{\TalentKampfExtraJPA}}
-
+\def \KampfwerteKampfExtraA{
+	\IfStrEq{\TalentKampfExtraA}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraAAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraAPA}{}{-}{\TalentKampfExtraAPA}
+		}
+	}
+ }
+\def \KampfwerteKampfExtraB{
+	\IfStrEq{\TalentKampfExtraB}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraBAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraBPA}{}{-}{\TalentKampfExtraBPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraC{
+	\IfStrEq{\TalentKampfExtraC}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraCAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraCPA}{}{-}{\TalentKampfExtraCPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraD{
+	\IfStrEq{\TalentKampfExtraD}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraDAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraDPA}{}{-}{\TalentKampfExtraDPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraE{
+	\IfStrEq{\TalentKampfExtraE}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraEAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraEPA}{}{-}{\TalentKampfExtraEPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraF{
+	\IfStrEq{\TalentKampfExtraF}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraFAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraFPA}{}{-}{\TalentKampfExtraFPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraG{
+	\IfStrEq{\TalentKampfExtraG}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraGAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraGPA}{}{-}{\TalentKampfExtraGPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraH{
+	\IfStrEq{\TalentKampfExtraH}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraHAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraHPA}{}{-}{\TalentKampfExtraHPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraI{
+	\IfStrEq{\TalentKampfExtraI}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraIAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraIPA}{}{-}{\TalentKampfExtraIPA}
+		}
+	}
+}
+\def \KampfwerteKampfExtraJ{
+	\IfStrEq{\TalentKampfExtraJ}{}{}{
+		\makebox[2.5mm][c]{
+			\TalentKampfExtraJAT
+		}
+		\KampfwerteTrenner \makebox[2.5mm][c]{
+			\IfStrEq{\TalentKampfExtraJPA}{}{-}{\TalentKampfExtraJPA}
+		}
+	}
+}
 %----------------------------
 %	Zauberbefüllung
 \makeatletter
